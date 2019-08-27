@@ -1,47 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+	Legal info:
+	
+	Background artwork - Minecraft 10th anniversary (C) Mojang
+						 Bliss (C) Microsoft
+						 OpenRCT2, Public Domain
+						 Last episode with Jeremy (C) Top Gear
+						 Elon Musk smoking kush (C) Elon Musk, Joe Rogan
+						 James May is my own work, Public Domain
+	My profile picture - The Clash's London Calling (C) The Clash, CBS, Epic
+	Icons - Font Awesome (C) https://fontawesome.com
+	Logos - Logos for Telegram, Discord, GitHub and GitLab all are property of their respective owners.
+
+	WRITTEN CONTENT IS WRITTEN BY ME AND IS LICENSED UNDER CC-BY 2.0
+	https://creativecommons.org/licenses/by/2.0/
+	This means that you can copy and quote it, as long as I get credit.
+
+	Code is collaboration from f00f.xyz (C) zxyz (me),
+		People from Stack Overflow (no credit given), under MIT
+		Some shit from others' blogs, no credit given again.
+	I reserve all rights, with the loose license of given below
+		- You can't copy it, but if you do, I won't care.
+
+	If I didn't credit you, contact me in the contact section of
+	the site and I will make sure to not do it.
+
+	If you have a problem with me using my content, see the above
+	notice.
+
+	If you have a problem with that, please see this link -
+	https://www.youtube.com/watch?v=UrgpZ0fUixs
+
+	Technical info:
+
+	This site is purely HTML and CSS. I quit back-end
+	bullshit a long time ago. Almost every project I have on the web
+	now has no back-end. Check out nigger.technology on the stuff
+	that I had worked on. There is no Ruby there, it's plainly my
+	own build system :) Also, the CSS is integrated in the page,
+	to constrain myself to one page only.
+-->
+
 <head prefix="og: http://ogp.me/ns#">
 	<meta charset="UTF-8">
 	<meta content="object" property="og:type"> 
 	<meta content="zxyz.best" property="og:site_name"> 
-	<title>RIP Terry A. Davis</title>
+	<title>zxyz best</title>
 	<meta name="twitter:title" content="zxyz.best">
 	<meta name="og:title" content="zxyz.best">
-	<meta name="description" content="Memorance of Terry A. Davis">
-	<meta name="twitter:description" content="Memorance of Terry A. Davis">
-	<meta name="og:description" content="Memorance of Terry A. Davis">
+	<meta name="description" content="Personal website about zxyz">
+	<meta name="twitter:description" content="Personal website about zxyz">
+	<meta name="og:description" content="Personal website about zxyz">
 	<meta content="64" property="og:image:width">
 	<meta content="64" property="og:image:height">
-	<meta name="og:image" content="https://zxyz.best/terry.jpeg">
-	<meta name="twitter:image" content="https://zxyz.best/terry.jpeg">
+	<meta name="og:image" content="https://zxyz.best/favicon.jpg">
+	<meta name="twitter:image" content="https://zxyz.best/favicon.jpg">
 	<meta content="summary" property="twitter:card">
-	<link rel="shortcut icon" href="terry.jpeg" type="image/jpeg">
+	<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-	body {
-		font-family: Arial;
-		background-color: black;
-		font-size: 11pt;
-		color: white;
+	<script src="https://kit.fontawesome.com/4dbc987eda.js"></script>
+<style>
+body {
+	font-family: Arial;
+	background-color: #0c0d0d;
+	font-size: 11pt;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.favico {
+	position: static;
+	vertical-align: middle;
+	border-radius: 10%;
+	animation: favico 0.5s ease-out;
+}
+
+.ripTerry {
+	display: none;
+	margin-bottom: 200px;
+}
+
+.c {
+	text-align: center;
+}
+
+.main {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.border {
+	position: static;
+	text-align: left;
+	display: inline-block;
+	max-width: 60%;
+}
+
+.list {
+	font-size: 140%;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: -2;
+}
+
+.hSpacer {
+	display: inline;
+	margin-left: 20px;
+}
+
+.linkWork {
+	min-width: 100px;
+}
+
+.contactList {
+	font-size: 120%;
+}
+
+.content {
+	overflow: hidden;
+	position: static;
+	animation: content 0.55s ease-out;
+}
+
+@keyframes content {
+	0% {
+		transform: translateY(5%);
+		opacity: 0;
 	}
 
-	a {
-		color: white;
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes favico {
+	0% {
+		height: 96px;
+		width: 96px;
 	}
 
-	.favico {
-		vertical-align: middle;
-		border-radius: 50%;
-		margin-right: 3px;
+	100% {
+		height: 128px;
+		width: 128px;
 	}
+}
 
-	.ripTerry {
-/*		display: hidden;*/
-		margin-bottom: 200px;
+@media only screen and (max-width: 768px) { 
+	.border {
+		text-align: left;
+		display: inline-block;
+		max-width: 90%;
 	}
-	</style>
+}
+</style>
+<script>
+var bgs = [
+	"back.png",
+	"back-gs.png",
+	"back_purple.png",
+	"back_red.png",
+	"back_xp.jpg",
+	"back_car.jpg",
+	"back_old.jpg",
+	"back_may.png",
+	"back_elon.jpg"
+];
+
+var r = Math.floor(Math.random() * bgs.length);
+
+window.onload = function() {
+	var bg = document.getElementById("bg");
+	bg.style.background = "url('" + "bgs/" + bgs[r] + "') no-repeat";
+}
+</script>
 </head>
 <body>
+<!--
+
+	Two weeks after the one year anniversary of his death, this mesage
+	was displayed on a seperate landing page.
+	https://zxyz.best/index_terry_landing.html
+
 	<div class="ripTerry">
 		<h1>RIP Terry A. Davis</h1>
 		<p>August 11th marks the 1 year of his passing.</p>
@@ -52,6 +212,52 @@
 		<p>I am also reopening a small archive of Terry's stuff I have collected. <a href="terry/index.html">Check it here.</a></p>
 		<img src="terry.jpeg">
 	</div>
-	<p><a href="index_old.html">My regular site.</a></p>
+-->
+
+<!--
+
+	Email spam filter.
+
+动态网自由门 天安門 天安门 法輪功 李洪志 Free Tibet 六四天安門事件 The Tiananmen Square protests of 1989 天安門大屠殺 The Tiananmen Square Massacre 反右派鬥爭 The Anti-Rightist Struggle 大躍進政策 The Great Leap Forward 文化大革命 The Great Proletarian Cultural Revolution 人權 Human Rights 民運 Democratization 自由 Freedom 獨立 Independence 多黨制 Multi-party system 台灣 臺灣 Taiwan Formosa 中華民國 Republic of China 西藏 土伯特 唐古特 Tibet 達賴喇嘛 Dalai Lama 法輪功 Falun Dafa 新疆維吾爾自治區 The Xinjiang Uyghur Autonomous Region 諾貝爾和平獎 Nobel Peace Prize 劉暁波 Liu Xiaobo 民主 言論 思想 反共 反革命 抗議 運動 騷亂 暴亂 騷擾 擾亂 抗暴 平反 維權 示威游行 李洪志 法輪大法 大法弟子 強制斷種 強制堕胎 民族淨化 人體實驗 肅清 胡耀邦 趙紫陽 魏京生 王丹 還政於民 和平演變 激流中國 北京之春 大紀元時報 九評論共産黨 獨裁 專制 壓制 統一 監視 鎮壓 迫害 侵略 掠奪 破壞 拷問 屠殺 活摘器官 誘拐 買賣人口 遊進 走私 毒品 賣淫 春畫 賭博 六合彩 天安門 天安门 法輪功 李洪志 Winnie the Pooh 劉曉波动态网自由门
+-->
+
+<div id="bg"></div>
+<div class="main c">
+	<div style="display:none;"><h1>Although I do my best to make this site compliant with all browsers, not having CSS is a big miss on this one. Consider coming out of that CLIshit browser, you fatass neckbeard.</h1></div>
+	<noscript><h1>Nice fucking browser, retard. Having fun not having JS? Having fun using a browser that breaks 99% of all websites? Get a job, lose some weight, start using technology newer than 1983, maybe you'll be eventually out of your cesspool pit your parents call your room.</h1></noscript>
+	<p class="c"><img class="favico" src="favicon.jpg" width="128" height="128" alt="Profile picture" title="The Clash - London Calling, best album art of all time. If you disagree, hey /mu/, die!"></p>
+<div class="border">
+<div class="content">
+	<h1 class="c">zxyz</h1>
+	<br>
+	<h2 class="c">About</h2>
+	<p>I'm a 16 y/o high school student from Lithuania. Born on March 2nd, to rant about various things like a 60 year old man.</p>
+	<p>While now I barely do anything, I used to be a half-active developer. Sometimes I do fire up a text editor and update my site or work on a project, however those days have become more and more far in-between.</p>
+	<p>If you want an honest opinion, you can count on me. I don't like telling lies and I really don't like hugboxing. I also do a hell of a load of banter, which I know some people get offended by.</p>
+	<p>I hate the internet, I hate every stupid profile on every centralized social platform. Although I do use them, I don't feel right using them. The best thing about the old internet is the mess that it used to be, with everyone jumping onto GeoCities to make their own site about them. Yes, most of them were terrible, most of them were just 200 gifs stuck in loops that made your eyes bleed. However I strive for character, I strive for humanity. Faceless profiles with a certain layout with you just having to type in your name, your bio and upload a picture tells me nothing about you. It is an utter polar opposite with personal sites.</p>
+	<p>My main interests are technology, music and just remembering the good ol' days. I am a big boomer, although I sometimes can try to hide it. I'm a big music man, if I'm not listening to something right now, my mind is already humming something from memory. I don't play any instruments, and I don't really have any favorite genres, the most I listen to is rock and synthwave/electronic.</p>
+	<p>A really big idol in my life is Terry A. Davis, which I have an archive with some of his work and photos on <u><a href="terry/index.html">here</a></u>.</p>
+	<p>I also have a cat, she's quite amazing, and although she bites me, she still brings up my mood, <u><a href="cat/index.html">here are some pictures</a></u>.</p>
+	<br>
+	<h2 class="c">Contact</h2>
+	<p>The higher above the platform is, the more likely I will respond.</p>
+	<div class="contactList">
+		<p><i class="fas fa-at"></i> E-mail: <u><a href="mailto:cmp@airmail.cc">cmp // airmail.cc</a></u></p>
+		<p><i class="fab fa-telegram"></i> Telegram: <u><a href="https://t.me/zxyz0">@zxyz0</a></u></p>
+		<p><i class="fab fa-discord"></i> Discord: <u><a href="https://discordapp.com/">zxyz#8479</a></u></p>
+		<p><i class="fas fa-terminal"></i> IRC: <u><a href="https://www.rizon.net/chat">zxyz // irc.rizon.net</a></u></p>
+	</div>
+	<br>
+	<h2 class="c">Work</h2>
+	<p class="list c"><a href="https://github.com/x-t" class="linkWork" title="GitHub"><i class="fab fa-github"></i> x-t</a> <span class="hSpacer"></span>|<span class="hSpacer"></span> <a href="https://gitlab.com/f00f" class="linkWork" title="GitLab"><i class="fab fa-gitlab"></i> f00f</a></p>
+	<p>I participated in the making of and keep maintaining <u><a href="https://nigger.technology">nigger.technology</a></u>.</p>
+	<p>My most complex project was <u><a href="https://github.com/x-t/okforms">okforms</a></u>.</p>
+	<p>The piece of shit that made me the most headaches was <u><a href="https://github.com/x-t/ebin-dos">ebin-dos</a></u>.</p>
+	<p>I sometimes try to work on hackintoshing, see my X220 EFI folder <u><a href="https://github.com/x-t/x220-mojave-efi">here</a></u>.</p>
+	<p>Since I lost almost all respect for open source advocates and projects, I decided to keep this website closed. If you want, copy it, I won't care.</p>
+	<p>I dabbled with high-level and low-level stuff. From full stack development, to front-end development, down to operating systems, although that one I haven't really figured out at all.</p>
+</div><!-- content -->
+</div><!-- border -->
+</div><!-- main -->
 </body>
 </html>
