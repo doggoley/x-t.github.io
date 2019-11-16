@@ -1,0 +1,3 @@
+[submodule "numgame"]
+	path = numgame
+	url = git@github.com:x-t/numgame
