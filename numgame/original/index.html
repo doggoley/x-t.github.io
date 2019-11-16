@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>numgame</title>
+	<style>
+	body {
+		background-color: black;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	button {
+		background-color: black;
+		color: white;
+		border: none;
+		border-bottom: 2px solid white;
+		padding: 10px 24px;
+	}
+
+	input[type=text] {
+		background-color: black;
+		color: white;
+		border: none;
+		padding: 7px 15px;
+		border-bottom: 2px solid white;
+	}
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="gameSetup">
+        <h3>numgame</h3>
+        <p><strong>What is this?</strong></p>
+        <p>This is an unfun game that I wrote in an hour.</p>
+        <h4>Here's how it works:</h4>
+        <p>Set the max value for numbers and the completion time
+        The game creates a mathematical equation that looks like this
+        <pre>%num1% %operator% %num2%</pre>
+        num1 and num2 are randomly generated numbers that go from 1 to 
+        the max value you gave. The operator is randomly selected, due to 
+        <em>float</em>ing reasons the only operators that are generated now 
+        are +, - and *. You are given the amount of time you set to solve the 
+        generated equation</p>
+        <br>
+		<table>
+		<tr>
+			<td>Max value for numbers</td>
+			<td><input id="gameSetupMax" type="text" /></td>
+		</tr>
+		<tr>
+			<td>Time for completion (seconds)</td>
+			<td><input id="gameSetupTime" type="text" /></td>
+		</tr>
+		</table>
+		<button onclick="startGame()">Start game!</button>
+	</div>
+	<p id="error"></p>
+	<h3 id="eq"></h3>
+	<p id="timer"></p>
+	<p id="score"></p>
+	<div id="table" style="display:none;">
+	<table>
+		<tr>
+			<td><button onclick="a(7)">7</button></td>
+			<td><button onclick="a(8)">8</button></td>
+			<td><button onclick="a(9)">9</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(4)">4</button></td>
+			<td><button onclick="a(5)">5</button></td>
+			<td><button onclick="a(6)">6</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(1)">1</button></td>
+			<td><button onclick="a(2)">2</button></td>
+			<td><button onclick="a(3)">3</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(0)">0</button></td>
+			<td><button onclick="a('minus')" id="thatbutton">-</button></td>
+			<td><button onclick="s()">OK</button></td>
+		</tr>
+	</table>
+	<button onclick="bs()">backspace</button>
+	<button onclick="location.reload()">reset game</button>
+	<br /><br />
+    <div id="keyboardInstr">
+	<small>Use the keyboard above to enter digits. You can also use your real keyboard.</small><br />
+	<small>Use the 'p' key to switch between positive and negative numbers.</small><br />
+    </div>
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>

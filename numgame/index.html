@@ -1,0 +1,323 @@
+<html>
+<head>
+	<title>numgame</title>
+	<style>
+	body {
+		background-color: #f59f4e;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	button {
+		background-color: #f59f4e;
+		color: black;
+		border: none;
+		border-bottom: 2px solid black;
+		padding: 10px 24px;
+		font-size: 120%;
+	}
+
+	button[data-state=enabled] {
+		background-color: lightgreen;
+		color: black;
+		border: none;
+		border-bottom: 2px solid black;
+		padding: 10px 24px;
+		font-size: 120%;
+	}
+
+	button[data-state=disabled] {
+		background-color: #d15656;
+		color: black;
+		border: none;
+		border-bottom: 2px solid black;
+		padding: 10px 24px;
+		font-size: 120%;
+	}
+
+	input[type=text] {
+		background-color: #f59f4e;
+		color: black;
+		border: none;
+		padding: 7px 15px;
+		border-bottom: 2px solid black;
+	}
+
+	#gameSetup, #gameTutorial, #customSetup, #customSetupError, #gameWindow, .c {
+		text-align: center;
+	}
+
+	#gameTutorial, #customSetup, #gameWindow, #customSetupError {
+		display: none;
+	}
+
+	table {
+		margin-left:auto; 
+		margin-right:auto;
+	}
+
+	.grid3 {
+		display: grid;
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+		grid-template-columns: auto auto auto;
+		max-width: 300px;
+		text-align: center;
+		margin-left:auto; 
+		margin-right:auto;
+		justify-content: center;
+	}
+
+	.grid2 {
+		display: grid;
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+		grid-template-columns: auto auto;
+		max-width: 300px;
+		text-align: center;
+		margin-left:auto; 
+		margin-right:auto;
+		justify-content: center;
+	}
+
+	.gridNode {
+		display: inline-grid;
+		text-align: center;
+	    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+	    white-space: -pre-wrap;      /* Opera 4-6 */
+	    white-space: -o-pre-wrap;    /* Opera 7 */
+	    white-space: pre-wrap;       /* css-3 */
+	    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+	    word-break: break-all;
+	    white-space: normal;
+	}
+
+	.gridNode button {
+		background-color: #f59f4e;
+		color: black;
+		border: none;
+		border-bottom: 2px solid black;
+		padding: 10px 24px;
+		font-size: 150%;
+	}
+
+	#operation, #answer {
+		font-size: 200%;
+	}
+
+	#answer {
+		min-height: 37px;
+	}
+
+	#progress {
+		max-width: 200px;
+		background-color: #ddd;
+		margin-left:auto; 
+		margin-right:auto;
+	}
+
+	#progressBar {
+		width: 100%;
+  		height: 5px;
+  		background-color: #5380c9;
+	}
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1 class="c">numgame</h1>
+	<div id="gameSetup">
+		<noscript>This game requires Javascript</noscript>
+		<p><button onclick="tutorial()">Tutorial</button></p>
+		<table>
+		<tr>
+			<td><button onclick="gameSetup('easy')">Easy</button></td>
+			<td><button onclick="gameSetup('medium')">Medium</button></td>
+			<td><button onclick="gameSetup('hard')">Hard</button></td>
+			<td><button onclick="gameSetup('custom')">Custom</button></td>
+		</tr>
+		</table>
+	</div>
+	<div id="customSetup">
+		<table>
+		<tr>
+			<td>Max value for numbers</td>
+			<td><input id="gameSetupMax" type="text" /></td>
+		</tr>
+		<tr>
+			<td>Time for completion (seconds)</td>
+			<td><input id="gameSetupTime" type="text" /></td>
+		</tr>
+		<tr>
+			<td>Operators</td>
+			<td><button id="btn1" data-state="enabled" onclick="customSetupToggleOp('+')">+</button><button id="btn2" data-state="enabled" onclick="customSetupToggleOp('-')">-</button><button id="btn3" data-state="enabled" onclick="customSetupToggleOp('*')">*</button><button id="btn4" data-state="enabled" onclick="customSetupToggleOp('/')">/</button></td>
+		</tr>
+		<tr>
+			<td>Helper</td>
+			<td><button id="gameSetupHelper" data-state="enabled" onclick="customSetupToggleHelper()">Enabled</button></td>
+		</tr>
+		<tr>
+			<td>Negative results</td>
+			<td><button id="gameSetupNegatives" data-state="enabled" onclick="customSetupToggleNegatives()">Enabled</button></td>
+		</tr>
+		</table>
+		<button onclick="customStart()">Start game!</button>
+	</div>
+	<div id="customSetupError">
+		<p id="customSetupErrorText"></p>
+		<button onclick="customSetupErrorQuit()">Try again</button>
+	</div>
+	<div id="gameTutorial">
+		<p>numgame is an experimental project, first prototyped in 2017/2018 and almost completely rewritten.</p>
+		<p>Play the original prototype <a href="original/">here!</a></p>
+		<br>
+		<h2>Gameplay</h2>
+		<p>You have to solve two-number mathematical operation. You run against the clock to solve them.</p>
+		<p>There are three pre-made difficulties, although you can create your own by using "Custom".</p>
+		<h3>Easy</h3>
+		<p>
+		<table>
+		<tr>
+			<td>Max number generated</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>Time allowed per operation</td>
+			<td>25s</td>
+		</tr>
+		<tr>
+			<td>Operators</td>
+			<td><b>+</b>, <b>-</b></td>
+		</tr>
+		<tr>
+			<td>Helper</td>
+			<td>Enabled</td>
+		</tr>
+		<tr>
+			<td>Negative results</td>
+			<td>Disabled</td>
+		</tr>
+		</table>
+		</p>
+		<h3>Medium</h3>
+		<p>
+		<table>
+		<tr>
+			<td>Max number generated</td>
+			<td>40</td>
+		</tr>
+		<tr>
+			<td>Time allowed per operation</td>
+			<td>20s</td>
+		</tr>
+		<tr>
+			<td>Operators</td>
+			<td><b>+</b>, <b>-</b>, <b>*</b>, <b>/</b></td>
+		</tr>
+		<tr>
+			<td>Helper</td>
+			<td>Enabled</td>
+		</tr>
+		<tr>
+			<td>Negative results</td>
+			<td>Enabled</td>
+		</tr>
+		</table>
+		</p>
+		<h3>Hard</h3>
+		<p>
+		<table>
+		<tr>
+			<td>Max number generated</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>Time allowed per operation</td>
+			<td>15s</td>
+		</tr>
+		<tr>
+			<td>Operators</td>
+			<td><b>+</b>, <b>-</b>, <b>*</b>, <b>/</b></td>
+		</tr>
+		<tr>
+			<td>Helper</td>
+			<td>Disabled</td>
+		</tr>
+		<tr>
+			<td>Negative results</td>
+			<td>Enabled</td>
+		</tr>
+		</table>
+		</p>
+		<h2>Controls</h2>
+		<p>An on screen keyboard numpad is included for mobile phones and people with mice.</p>
+		<p>Keyboard keys 0-9 and numpad keys 0-9 are supported.</p>
+		<p>To toggle between a positive/negative result, press <b>t</b></p>
+		<h2>What is helper?</h2>
+		<p>Helper makes generated numbers easier for you to process.</p>
+		<button onclick="quitTutorial()">Quit tutorial</button>
+	</div>
+	<div id="gameWindow">
+		<p id="operation"></p>
+		<p id="answer"></p>
+		<div id="progress">
+			<div id="progressBar"></div>
+		</div>
+		<br>
+		<div class="grid3">
+			<div class="gridNode"><button onclick="appendResult(7)">7</button></div>
+			<div class="gridNode"><button onclick="appendResult(8)">8</button></div>
+			<div class="gridNode"><button onclick="appendResult(9)">9</button></div>
+			<div class="gridNode"><button onclick="appendResult(4)">4</button></div>
+			<div class="gridNode"><button onclick="appendResult(5)">5</button></div>
+			<div class="gridNode"><button onclick="appendResult(6)">6</button></div>
+			<div class="gridNode"><button onclick="appendResult(1)">1</button></div>
+			<div class="gridNode"><button onclick="appendResult(2)">2</button></div>
+			<div class="gridNode"><button onclick="appendResult(3)">3</button></div>
+			<div class="gridNode"><button onclick="appendResult(0)">0</button></div>
+			<div class="gridNode"><button onclick="toggleNegative()" id="btnNeg">-</button></div>
+			<div class="gridNode"><button onclick="submitResult()">OK</button></div>
+		</div>
+		<div class="grid3">
+			<div class="gridNode"><button onclick="backSpace()">DEL</button></div>
+			<div class="gridNode"><button onclick="location.reload()">QUIT</button></div>
+		</div>
+		<p id="stats"></p>
+	</div>
+	<!--
+	<p id="error"></p>
+	<h3 id="eq"></h3>
+	<p id="timer"></p>
+	<p id="score"></p>
+	<div id="table" style="display:none;">
+	<table>
+		<tr>
+			<td><button onclick="a(7)">7</button></td>
+			<td><button onclick="a(8)">8</button></td>
+			<td><button onclick="a(9)">9</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(4)">4</button></td>
+			<td><button onclick="a(5)">5</button></td>
+			<td><button onclick="a(6)">6</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(1)">1</button></td>
+			<td><button onclick="a(2)">2</button></td>
+			<td><button onclick="a(3)">3</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="a(0)">0</button></td>
+			<td><button onclick="a('minus')" id="thatbutton">-</button></td>
+			<td><button onclick="s()">OK</button></td>
+		</tr>
+	</table>
+	<button onclick="bs()">backspace</button>
+	<button onclick="location.reload()">reset game</button>
+	</div>
+	-->
+
+<script src="script.js"></script>
+</body>
+</html>
