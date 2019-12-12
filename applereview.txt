@@ -1,0 +1,62 @@
+# Apple review
+## Dec 12, 2019
+
+1. Past experience
+
+- macOS (10.13, 10.14) on an X220 hackintosh
+- iOS (13) on an iPhone 7
+- Android (2.3-9) on HTC Desire HD, Galaxy S2/Trend Lite/S4/S6
+- Windows (98-10) on a multitude of laptops and a desktop
+- Linux on an X200 and X220
+- Other BSD systems (will not mention)
+
+Almost all references to past Android experiences are my own or anecdotal.
+Almost all references to iOS before 13 or iPhones before 7 are anecdotal.
+
+2. Comparing macOS
+
+macOS out of everything I've tried is the least worst option. It's not the second coming of Christ or anything, it's just good enough. There are some factors where it's beaten by other systems, but in the overall picture it's better.
+
+- new macOS releases tend to be buggy
+- macOS' customization barrier is steeper for many
+
+2.1. macOS relation to the hardware
+
+macOS officially only runs on Mac computers, which is a pain in the ass if you wish to try it out before making an investment into a Mac.
+To say that trying to get around it is unstable, is an understatement. It is held with duct tape and you really realize that especially with laptop hardware. Most of the time it's a miracle it works, and if you encounter some bugs along the way, it's not too uncommon to see people not complaining.
+Here are some bullshit issues on my X220 that I have to experience, which I have found no solutions to
+
+- screen glitches
+- microphone volume setting doesn't work
+- shut down button actually restarts
+- random freezes
+- stuck keys
+- not being to boot after an update
+
+I bite my teeth to get through these, because I feel like switching to Windows or Linux would bring up even more issues than these. And these are mainly QOL issues, whereas the other two mentioned have horrible maintenance issues.
+
+3. Comparing iOS
+
+I switched to iOS kinda blindly. I just woke up one day and realized my S6 was way too fucking broken and I wanted an iPhone, so the next day I got one. I sound like a very, very spoiled child that can point a finger at something and just get it, but holy shit would I love that to be the case. It was just that the S6 was the only phone really working, as all the older ones has batteries holding less electrons than a roll of sandpaper.
+And although I was very much informed about what changes I was about to experience, it still kinda hit me in the face as if it was playing Crazy Taxi. While macOS still retains a lot of throughout other systems, where the argument can be made "it doesn't matter, you sit in the browser anyway", iOS is just a different beast.
+Overall, my experience is quite positive, so here's it in short terms
+
+Pros
+- Less crashes
+- More polished apps
+- OOTB experience isn't garbage (comparing to Android stock ROMs)
+- Very robust security
+
+Cons
+- Sideloading apps is almost impossible, you need to sign them and Cydia Impactor is currently not working with free certificates, so you'll have to use chink appstores to get them signed by Great Wall Solutions Ltd.
+- Way, way less customizability. No minimal homescreens, widgets are basically just the "Today" section.
+
+4. iOS relation to the hardware
+
+You can't use iOS without an iPhone. Only a watered down version from SexCode and that's pretty much it. You really have to buy one or lend one to try it out fully. Which may be as long as a 2 year investment, like myself, with no option to turn back. Not to say that as of now, iPhones have gotten extremely lower quality in general, with the 6es bending and the 7s having failing audio ICs and the 11s scratching to shit. Personally, I didn't experience much of that, but I only bought the phone in November, so long-term has not come yet.
+The only issue I have is my fingerprint sensor being really unreliable, which I am going to try taking to the warranty.
+
+5. Conclusion
+
+I can see why people may not like the platforms, but the truth is many arguments are based on old shit that's just not true anymore. Many people that just hate the platforms and hate the people using them are regularly misinformed, and those that continue to *really* bring it up, are most likely freaks that have nothing much deeper than their tongue-swapping love for Linux.
+I'm planning to stay, which is quite a lot from me since I used to be the guy that I described above.
