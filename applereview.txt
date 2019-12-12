@@ -46,6 +46,7 @@ Pros
 - More polished apps
 - OOTB experience isn't garbage (comparing to Android stock ROMs)
 - Very robust security
+- Notifications are done perfectly, with each app having to ask you before starting to bombard you with a stream of shit
 
 Cons
 - Sideloading apps is almost impossible, you need to sign them and Cydia Impactor is currently not working with free certificates, so you'll have to use chink appstores to get them signed by Great Wall Solutions Ltd.
