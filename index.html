@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!--
 	Legal info:
 	
@@ -57,7 +56,6 @@
 	<meta content="summary" property="twitter:card">
 	<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://kit.fontawesome.com/4dbc987eda.js"></script>
 <style>
 body {
 	font-family: Arial;
@@ -171,26 +169,6 @@ a {
 	}
 }
 </style>
-<script>
-var bgs = [
-	"back.png",
-	"back-gs.png",
-	"back_purple.png",
-	"back_red.png",
-	"back_xp.jpg",
-	"back_car.jpg",
-	"back_old.jpg",
-	"back_may.png",
-	"back_elon.jpg"
-];
-
-var r = Math.floor(Math.random() * bgs.length);
-
-window.onload = function() {
-	var bg = document.getElementById("bg");
-	bg.style.backgroundImage = "url('" + "bgs/" + bgs[r] + "')";
-}
-</script>
 </head>
 <body>
 <!--
@@ -248,11 +226,29 @@ window.onload = function() {
 	<p>I participated in the making of and keep maintaining <u><a href="https://nigger.technology">nigger.technology</a></u>. Recently rewritten to use Bootstrap.</p>
 	<p>My most complex project was <u><a href="https://github.com/x-t/okforms">okforms</a></u>.</p>
 	<p>The piece of shit that made me the most headaches was <u><a href="https://github.com/x-t/ebin-dos">ebin-dos</a></u>.</p>
-	<p>I sometimes try to work on hackintoshing, see my X220 EFI folder <u><a href="https://github.com/x-t/x220-mojave-efi">here</a></u>.</p>
+	<p>I sometimes try to work on hackintoshing, see my X220 EFI folder <u><a href="https://github.com/x-t/x220-lion-efi">here (Lion)</a></u>, <u><a href="https://github.com/x-t/x220-mojave-efi">here (Mojave)</a></u> or <u><a href="https://github.com/x-t/x220-catalina-efi">here (Catalina)</a></u>.</p>
 	<p>Since I lost almost all respect for open source advocates and projects, I decided to keep this website closed. If you want, copy it, I won't care.</p>
 	<p>I dabbled with high-level and low-level stuff. From full stack development, to front-end development, down to operating systems, although that one I haven't really figured out at all.</p>
 </div><!-- content -->
 </div><!-- border -->
 </div><!-- main -->
+<script>
+var b = "back";
+var bgs = [
+	b+".png",
+	b+"-gs.png",
+	b+"_purple.png",
+	b+"_red.png",
+	b+"_xp.jpg",
+	b+"_car.jpg",
+	b+"_old.jpg",
+	b+"_may.png",
+	b+"_elon.jpg"
+];
+var r = Math.floor(Math.random() * bgs.length);
+var bg = document.getElementById("bg");
+bg.style.backgroundImage = "url('" + "bgs/" + bgs[r] + "')";
+</script>
+<script src="https://kit.fontawesome.com/4dbc987eda.js"></script>
 </body>
 </html>
