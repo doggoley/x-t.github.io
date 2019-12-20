@@ -118,6 +118,23 @@ a {
     z-index: -2;
 }
 
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.flake {
+	font-size: 50%;
+	display: block;
+	position: fixed;
+}
+
 .hSpacer {
 	display: inline;
 	margin-left: 20px;
@@ -197,6 +214,7 @@ a {
 -->
 
 <div id="bg"></div>
+<div id="snow"><!-- lmao eat shit jews --></div>
 <div class="main c">
 	<div style="display:none;"><h1>Although I do my best to make this site compliant with all browsers, not having CSS is a big miss on this one. Consider coming out of that CLIshit browser, you fatass neckbeard.</h1></div>
 	<noscript><h1>Nice fucking browser, retard. Having fun not having JS? Having fun using a browser that breaks 99% of all websites? Get a job, lose some weight, start using technology newer than 1983, maybe you'll be eventually out of your cesspool pit your parents call your room.</h1></noscript>
@@ -204,6 +222,8 @@ a {
 <div class="border">
 <div class="content">
 	<h1 class="c">zxyz</h1>
+	<br>
+	<h2 class="c">Merry Christmas!</h2>
 	<br>
 	<h2 class="c">About</h2>
 	<p>I'm a 16 y/o high school student from Lithuania. Born on March 2nd, to rant about various things like a 60 year old man.</p>
@@ -236,7 +256,7 @@ a {
 var b = "back";
 var bgs = [
 	b+".png",
-	b+"-gs.png",
+//	b+"-gs.png",		Too gloomy
 	b+"_purple.png",
 	b+"_red.png",
 	b+"_xp.jpg",
@@ -250,5 +270,6 @@ var bg = document.getElementById("bg");
 bg.style.backgroundImage = "url('" + "bgs/" + bgs[r] + "')";
 </script>
 <script src="https://kit.fontawesome.com/4dbc987eda.js"></script>
+<script src="snow.js"></script>
 </body>
 </html>
