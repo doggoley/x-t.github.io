@@ -1,0 +1,31 @@
+loc-navbar-home neegri tehnoloogia
+loc-navbar-about meist
+loc-navbar-gallery galerii
+loc-navbar-fresh fresh
+
+loc-index-1 67% mustadest lastest kasvab üles ühe vanemaga majapidamises.
+loc-index-2 2017 aastal moodustasid mustad inimesed 13% USA elanikkonnast, kuid moodustasid 43% HIV diagnoosidest.
+loc-index-3 Kuigi mustad inimesed moodustavad 13% elanikkonnast sooritasid nad 2016 aastal 51,6% mõrvadest.
+loc-index-4 Töötuid mustlasi on 12,9%, kuid töötuid valgeid inimesi on 6,3%.
+loc-index-5 Mustad inimesed mõrvasid 30,5 inimest milljonist, kui asiaadid mõrvasid 14,1 inimest milljonist ja valged mõrvasid 8,9 miljonist.
+loc-index-6 Mustadel Aafrika naistel oli neli korda suurem suremus kui valgetel naistel Suurbritannias.
+loc-index-7 Mustadest imikutest suri 10,97 tuhandest, valgeid imikuid suri 4,67 tuhandest.
+
+loc-gallery väga hea galerii
+
+loc-fresh-head1 toredad faktid geidest
+loc-fresh-1 Umbes 623 300 gei ja biseksuaalsetel meestel oli 2015 aasta lõpuks HIV, maailmas kokku 56% inimestest HIVga.
+loc-fresh-2 Ühel kuuendikul gei ja biseksuaalsetel meestel on enda teadmata HIV.
+loc-fresh-3 USA koolides kiusatakse gei teismelisi nii ekstreemselt et neil ei ole võimalik saada piisav haridus.
+loc-fresh-4 Üks küsitlus leidis, et kolmandik gei vastajatest oli puudunud eelmise kuu jooksul vähemalt ühe päeva koolist kuna nad ei tundnud ennast turvaliselt.
+loc-fresh-5 LGBT teismelised arvavad, et neil ei ole kuhugi oma muredega pöörduda.
+loc-fresh-6 LGBT teismelistel on kaks korda suurem tšanšš, et nad proovivad alkoholi või narkootikume.
+loc-fresh-7 Võrreldes heteroseksuaalidega on LGBT inimistel 2,5 korda suurem tšanšš et nad lõiguvad.
+loc-fresh-head2 TL;DR: ÄRA OLE GEI, SIND HAKATAKSE KIUSAMA, SU ENESETUNNE LÄHEB SITEMAKS JA SA TAPAD ENNAST ALKOHOLI JA NARKOOTIKUMITEGA.
+
+loc-about-by Koostasid:
+loc-about-translations Tõlked
+loc-about-offended Solvunud?
+loc-about-blow Niku püksi.
+loc-about-email Kontakteeru firmaga
+

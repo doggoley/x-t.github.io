@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cool tools, pt. 2</title>
+<!-- HEAD -->
+<!-- DESC 'Blog 2018-09-16 - Cool tools, pt. 2' -->
+</head>
+<body>
+<!-- HEADER -->
+<div class="entry blog">
+<h1 id='cool-tools-pt-2'>Cool tools, pt. 2</h1>
+<small>[<a href="../src_2018.html#cool-tools-pt-2">link</a>&mdash;<a href="../blog/cool-tools-pt-2.html">standalone</a>]</small>
+
+<p>This one is useful when you want to copy some source code to an HTML page (like these series) and you want to do it from a shell.</p>
+<pre>
+#!/bin/bash
+cat $1 | sed 's/&bsol;&amp;/&bsol;&amp;amp&bsol;;/g; s/&lt;/&bsol;&amp;lt&bsol;;/g; s/&gt;/&bsol;&amp;gt&bsol;;/g; s/&bsol;&bsol;/&bsol;&amp;bsol&bsol;;/g'
+</pre>
+<br>
+<footer>by <strong><a href="https://f00f.me/">cmp</a></strong></footer>
+</div>
+</body>
+</html>

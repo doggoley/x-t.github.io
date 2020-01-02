@@ -1,0 +1,30 @@
+loc-navbar-home la tecnologia negro
+loc-navbar-about dettaglio
+loc-navbar-gallery la galleria
+loc-navbar-fresh fresh
+
+loc-index-1 Il 67% dei bambini neri cresce in case monoparentali
+loc-index-2 Nel 2017, i neri rappresentavano il 13% della popolazione statunitense, ma il 43% delle nuove diagnosi di HIV
+loc-index-3 Nonostante costituiscano il 13% della popolazione, nel 2016 i neri hanno commesso il 51.6% di tutti gli omicidi
+loc-index-4 I tassi di disoccupazione erano significativamente più alti per le minoranze etniche al 12,9 per cento rispetto al 6,3 per cento per i bianchi
+loc-index-5 Il tasso di omicidi per i neri era 30.5 per milione di abitanti, 14.1 per gli asiatici e 8.9 per i bianchi.
+loc-index-6 Le donne africane hanno avuto un tasso di mortalità quattro volte superiore a quello delle donne bianche nel UK
+loc-index-7 Morti infantili neri su 1000 nati vivi: 10.97, morti infantili bianche su 1000 nati vivi: 4.67
+
+loc-gallery molto bene galleria
+
+loc-fresh-head1 il spasso fatti di omosessuali
+loc-fresh-1 Secondo le stime, 632.300 uomini omosessuale e bisessuali hanno contratto l'HIV alla fine del 2015, rappresentando il 56% di tutti i malati di HIV
+loc-fresh-2 Uno su sei omosessuale e bisessuali uomini con l'HIV non si rendono conto di averlo
+loc-fresh-3 Gli omosessuale adolescenti in US scuola sono spesso sottoposti a un bullismo così intenso da non essere in grado di ricevere una buona istruzione
+loc-fresh-4 Un sondaggio ha rivelato che oltre un terzo degli intervistati gay aveva perso un'intera giornata di scuola nell'ultimo mese perché si sentivano pericoloso
+loc-fresh-5 I giovani LGBT sentono di non avere un posto dove andare
+loc-fresh-6 I giovani omosessuali, lesbiche, bisessuali e transgender hanno più del doppio delle probabilità di provare droghe e alcol
+loc-fresh-7 Il rischio di autolesionismo tra i giovani LGBT è 2.5 volte più probabile
+loc-fresh-head2 tl:dr non essere omosessuale, stai per essere vittima di bullismo, stai per senti merda, e stai per ucciditi con alcol e droghe :D
+
+loc-about-by Il sito web creato da:
+loc-about-translations Traduzioni
+loc-about-offended Offeso?
+loc-about-blow Esplodere dal culo
+loc-about-email Contattare la società tramite la nostra email

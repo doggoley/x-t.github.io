@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>zxyz's blog</title>
+<description>A stupid blog</description>
+<language>en-us</language>
+<link>https://x-t.github.io/blog/rss.xml</link>
+<atom:link href="https://x-t.github.io/blog/rss.xml" rel="self" type="application/rss+xml" />
+
+<!-- LB -->
+
+<item>
+<title>Hello, Hackintosh.</title>
+<guid>https://x-t.github.io/2019.html#hello-hackintosh.html</guid>
+<pubDate>Mon, 25 Mar 2019 00:03:00 +0200</pubDate>
+<description><![CDATA[
+<p>As the title suggests, I did it.</p>
+<p>I realized that I actually liked macOS a lot more than I thought. I used to shit on it for a whole while, but I've never given it a fair chance.</p>
+<p>I finally crossed out of the test period and put it on my main SSD, which I find pretty satisfying.</p>
+<p>I used to put things like this in the about page, however I feel like that page should stay about the subject of the page, me, while the blog should be about what I think about/what I am doing.</p>
+<p>I used to switch OSes so often I just needed to keep updating that part of the page. I don't wanna do that anymore.</p>
+<p>This little OS switch also made me switch to Ethernet, which I can now announce as the superior alternative to Wi-Fi.</p>
+<p>Anyway, the page is hitting 100 commits from the Github migration, which is actually quite a lot, but considering how I used to spam about 20 commits per day just to change one CSS variable, I'm not that surprised.</p>
+<p>What's in the new update?</p>
+<ul>
+	<li>No more JS. It was used for a shitty easter egg anyway, and I can't even reproduce it on macOS.</li>
+	<li>No more fontawesome. It wasn't used much, the CSS file is like several megabytes, it's fucking awful, I don't wanna use it!</li>
+	<li>Unified navbar for both mobile and desktop. I know this one is a bit of a stretch, but I feel like the mobile version of my site was always missing out and kept using the shittier older navbar which uses icons that barely mean anything. A newspaper? What is that even supposed to mean?! You'd have to click on the icon to figure out what it meant. Bad design. I hate sites that do this, I am glad to change my ways from that.</li>
+	<li>Debloated some internal structure. Webpages are smaller now, without the same AIDS legacy code.</li>
+</ul>
+<p>And what is that for you? Saved bandwidth. That's about it. Yeah, small shit, but fuck developers that make sites filled with megabytes of JS frameworks, it's ass.</p>
+<p>I feel like the blog has become a changelog for this site, which isn't ideal. Let's talk about my other projects!</p>
+<h2>ded.</h2>
+<p>Pretty much this. I abandonded everything else other than my site. Why? I just didn't feel like continuing everything else. It may be due to the lack of feedback I receive on them, which is honestly my fault, I don't advertise my shit at all, I just make it for people to find, and people aren't really looking... I would like to work on something new, however I don't have any ideas popping up in my head. Sad!</p>
+<p>This entire idea drought just fills that void in my time with stuff that just isn't productive at all, like Minecraft, or YouTube videos. Ever sadder!</p>
+<p>Okay, changelogs aren't really going to work. Let's try talking about things in my life.</p>
+<p>Well, as my about page used to state, I don't really do anything in my life. It's kinda empty, and whatever I do I'll share with my friends, not just type it out in a blog. I don't really care about Yandex and Bing reading my life stories.</p>
+<p>So, I stated that I liked politics, how about a political blog, you know, the one Stallman has.</p>
+<p>FUCK. NO.</p>
+<p>I talked about politics on this site enough, if I went any farther this would be banned off Github.</p>
+<p>So, I feel like this blog has stayed silent for a long while for a reason. There is just nothing to talk about. The last time I actually made insightful commentary on here was the CoC fiasco. So, for a bit, it was a political blog.</p>
+<p>I don't know, if maybe by some chance I get some ideas for projects this blog will be resurrected out of obscurity, but as it stands now, it'll be kinda gay.</p>
+<p><em>And to end, let's bring back a little mini-series, last seen in October</em></p>
+<p>Yes, it's cool tools. This one is small tho. I didn't make this one anyway.</p>
+<p>I know there are some folks that patched Mojave onto HD3000 and under iGPUs and have some dogshit graphical glitches, where the colors become muddy and sometimes unreadable.</p>
+<p>Well, somebody made a tool for you. <a href="https://www.insanelymac.com/forum/topic/335569-mojave-light-mode-hybrid-transparency-patch-working-with-proof-pictures/">Download it and use it.</a> This thing fixed up my hackintosh and I can't be any happier with it.</p>
+<p>This blog post was sponsored by - <a href="https://swinsian.com/">Swinsian</a>: The best music player for macOS. Okay, not sponsored, I just use it, it's really good. I feel sad that it's not that popular. Try it. Also, fuck cmus.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>
+Finally an update after Christmas</title>
+<guid>https://x-t.github.io/2019.html#finally-an-update-after-christmas.html</guid>
+<pubDate>Thu, 14 Mar 2019 23:15:08 +0200</pubDate>
+<description><![CDATA[
+<p>Welcome to the new and updated site!</p>
+<p>Okay, it's not THAT updated.</p>
+<p>It's actually still the same, but with a new background and color scheme.</p>
+<p>I think these will be quite the only changes to the general layout (for a long while anyway), because I'm satisfied with where I am right now.</p>
+<p>The new color scheme is called blueish-shitfest, the new background is a piece of art that I made while messing around in Photoshop for 2 minutes.</p>
+<p>Standalone blog files don't look like ass now, I learned that lb is actually quite fucking terrible at generating HTML. By default that garbage put the footer outside of the body, first world problems, but this ain't it chief.</p>
+<p>Also, remember when I made like 3 posts on the Linux CoC thing?</p>
+<p>Well. Linux is shit, welcome to 2019. Version 5 is slower than ever and distros keep failing left and right. So if you believe that you were betrayed by your most-liked operating system/kernel, it's time to make a switch. I know I did.</p>
+<p>I recommend FreeBSD, it's actually quite a powerful system and does a lot of things similar to Linux, it also has the system base and packages seperated, so you can have a stable system AND up-to-date applications, Debian can suck my left nut.</p>
+<p>However, FreeBSD has its balls clamped by its retarded CoC, which got railed on when it was released, but now the Linuxfags can't talk shit. Also, its software/hardware support is lackluster. Software isn't as bad as hardware, but some things are straight up missing or outdated. So, it's your choice.</p>
+<p>Also, macOS is a real option, it's the one I chose, it has quite a few standard UNIX elements, but also professional application support that no other UNIX(-like) can match. It technically doesn't have a CoC, like Windows, but the CEO is a fag who stated that <a href="https://www.theverge.com/2018/12/3/18124416/tim-cook-apple-infowars-white-supremacy-podcasts-platform-adl">Apple products aren't for white supremacists</a>. I guess my opinion on it can be shortened to this - I like the product, but I hate the company.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>2019!</title>
+<guid>https://x-t.github.io/2019.html#2019.html</guid>
+<pubDate>Wed, 02 Jan 2019 23:43:57 +0200</pubDate>
+<description><![CDATA[
+<p>2018 is gone!</p>
+<p>It was a pretty nice year afterall, at least for me personally.</p>
+<p>Some dumb shit went down at the second half of it, but overall it wasn't that bad.</p>
+<p>I learned quite a lot, in programming and in general. I feel way more confident than before, if you wonder how bad I was, just look in the archive... shit haunts me every nightmare.</p>
+<p>Anyway, 2019 will be the last year of this decade, let's hope it won't close horribly.</p>
+<p>I don't have any plans or New Year's resolutions. In fact, I don't plan my life ahead the 3 minute mark. There is no point, live in the present, not the future.</p>
+]]></description>
+</item>
+
+
+
+
+<item>
+<title>The Christmas season</title>
+<guid>https://x-t.github.io/2018.html#the-christmas-season</guid>
+<pubDate>Sun, 16 Dec 2018 04:51:35 +0200</pubDate>
+<description><![CDATA[
+<p>It's here... The fucking holidays are in one week and everyone got their hats on. All cities in my country have set up their gigantic Christmas trees and all the songs are getting blasted.</p>
+<p>I understand it now (which is why I'm joining this <del>garbage</del> tradition, but I never understood joining it a month prior, like in the end of November. But whatever, I don't care.</p>
+<p>I positioned myself away from development for the past few weeks and especially from working on this website, I feel like this site's really reached its peak and I can't really change much significant before fucking it up.</p>
+<p>Which is kinda sad for me as the changes for the site for such an important (at least for me) season are minimal.</p>
+<p>Anyway, enjoy the Alex Jones (support free speech) and a true boomer joke.</p>
+<img alt="Boomer joke explained" src="../resources/img_blog/christmas_update/click.png" height="48" width="328">
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>Cool tools, pt. 4 - Removing gapps</title>
+<guid>https://x-t.github.io/2018.html#cool-tools-pt-4--removing-gapps</guid>
+<pubDate>Sat, 27 Oct 2018 03:11:34 +0300</pubDate>
+<description><![CDATA[
+<p>Sometimes a man just needs to install Google apps and to remove them afterwards. For example maybe to download something from the play store or to try something out.</p>
+<p>After you did your... whatever, you may be staggered to learn that there is no official way to uninstall gapps.</p>
+<p>The recommended way is to wipe and reinstall everything, well, not all of us have the time to do that. So, a solution - forcefully uninstall gapps.</p>
+<p>Things needed for this -</p>
+<ul>
+	<li>TWRP</li>
+	<li>The same ROM as you currently have (flashable zip)</li>
+</ul>
+<p>CWM is dead anyway, there is no real reason to use it.</p>
+<p><strong>Step 1</strong></p>
+<p>Wipe /system, just go to Wipe -> Advanced wipe -> [x] System -> Wipe</p>
+<p><strong>Step 2</strong></p>
+<p>Open up the terminal, go to Advanced -> Terminal, and type these</p>
+<pre>
+# cd /data
+# find ./ | grep google | xargs rm -rf
+</pre>
+<p>(keep in mind # means that it's ran as root, not a comment.)</p>
+<p><strong>Step 3</strong></p>
+<p>Flash your ROM, just make sure that it's the same - dirty flashing different ROMs ends badly most of the time.</p>
+<p><strong>Step 4</strong></p>
+<p>Clear cache/dalvik and reboot!</p>
+<br>
+<p>There, gapps is now gone. It's a hack, but it works. And it works better than reflashing as this actually deletes gapps, while reinstalling a ROM would just not recognize the already existing gapps.</p>
+<p>Not really a tool, but I wish I had known this before I needlessly wiped a few installs.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Updates - GitLab, f00f.xyz and a PSP</title>
+<guid>https://x-t.github.io/2018.html#updates--gitlab-f00fxyz-and-a-psp</guid>
+<pubDate>Sun, 07 Oct 2018 03:55:45 +0300</pubDate>
+<description><![CDATA[
+<p>Over the few days I have made a few changes to the site, I'll break them all down briefly.</p>
+<p><strong>Changed the domain</strong></p>
+<p>Now the primary domain is <a href="https://f00f.xyz">f00f.xyz</a>, <a href="https://x-t.github.io">x-t.github.io</a> now just redirects to this domain.</p>
+<p><strong>GitLab</strong></p>
+<p>I now host a mirror of this site on <a href="https://gitlab.com/f00f/f00f.gitlab.io">GitLab</a>.</p>
+<p>I also set up GitLab pages on <a href="https://f00f.gitlab.io">f00f.gitlab.io</a></p>
+<p>It relaxes its HTTPS a bit, which makes it possible to view on troublesome devices, such as this PSP</p>
+<p class="BigPhoto"><a href="../resources/img_blog/gitlab_psp/it_runs.jpg"><img src="../resources/img_blog/gitlab_psp/it_runs.jpg" width="360" height="640" alt="This site on a PSP"></a></p>
+<p class="SmallPhoto"><a href="../resources/img_blog/gitlab_psp/it_runs.jpg"><img src="../resources/img_blog/gitlab_psp/it_runs.jpg" width="240" height="426" alt="This site on a PSP"></a></p>
+]]></description>
+</item>
+
+
+<item>
+<title>Untitled rant, or CoC pt. 3</title>
+<guid>https://x-t.github.io/src_2018.html#untitled-rant-or-coc-pt-3</guid>
+<pubDate>Tue, 02 Oct 2018 21:21:14 +0300</pubDate>
+<description><![CDATA[
+<p>In the commit where Linus merged in the CoC to the Linux source code, there <a href="https://github.com/torvalds/linux/commit/8a104f8b5867c682d994ffa7a74093c54469c11f">has been quite a debate</a> on the decision. A lot of people voiced their opinions there, including me.</p>
+<p>Ada, the creator of Contributor Trojan Horse, has replied to the thread with multiple points. Since I don't want to reply to the discussion any more, I'll silently write about it in this blog (that may or may not violate GitHub's TOS).</p>
+<pre>
+My primary goal is to open the doors to success in tech through the gateway of open source by making it an option for as many people as possible. Why this is a debatable point, a point of contention, I don't know: but in the current climate, it makes my position political.
+</pre>
+<p>A CoC isn't the way to bring more people into tech. The way to bring more people into tech is give them an option to get into the field or not (and they already do), Microsoft's development cycle is teams screaming at each other in cubicles, the development process of Linux is getting an angry letter from a Finnish man because your code is shit.</p>
+<p>This is how the climate works, this is how software is made. The only way an argument will never be reached is if you develop the software alone.</p>
+<p>If you get offended by that, well then it's not for you, if you can't take an insult over your own shit, I don't think you should be doing anything here anyways. Open source isn't an echochamber, it's not a safezone, if you're bad - you will be called bad.</p>
+<pre>
+Contributor Covenant is a political document insofar as it prohibits discrimination, and specifically discrimination against the most marginalized and vulnerable members of the tech community. It is a statement against the status quo, which situation does not serve the needs of all people who have something positive to contribute.
+</pre>
+<p>They're not "marginalized and vulnerable". Open source is a level playing field, whether you're a god-forbidden CIS STRAIGHT WHITE MALE or gay or autistic or identify as a rock, no one cares, if you get work done, you'll get work done. Trying to put these minorities out of work, name them, isn't helping anyone and the minorities are supposed to be treated specially. You're creating ethics codes. "Respect the elderly." No.</p>
+<pre>
+I am critical of meritocracy, and I am vocal in my criticism. Not so much the concept— the execution. If tech truly is a meritocracy, then why are there so few women and people of color at the top of the hierarchy? Is it really because white men are the best programmers in the world, or are there cultural factors and explicit or implicit biases at play?
+</pre>
+<p>Yes.</p>
+<p>People who want to get into the sector are working hard. And these people happen to be cis white males. It's not our issue that women would rather go work as teachers than get into developing software.</p>
+<p>Meritocracy is going away either way, because of dipshits like Ada. Many companies now have diversity quotas, meaning if you're really good at engineering, you may not be accepted because on the employer's computer there's a message reading "NOT ENOUGH BLACK PEOPLE".</p>
+<p>This is the exact opposite of inclusivity, it's racism. Oh, but it's against <em>white people</em> so it's A-OK!</p>
+<pre>
+If you truly believe that meritocracy is about valuing the contribution, regardless of the person who made it, why are there personal attacks being made against me here? How are they even relevant? How are my politics relevant?
+</pre>
+<p>Because your CoC is shit. No one is going after you because you're an autistic tranny. Everyone is going after you because you deserve criticism for your shitty actions.</p>
+<p>Your politics are relevant because your CoC is a reflection of those politics. You call your CoC a political document, therefore it is in the play.</p>
+<pre>
+No one can seriously believe that an infraction of code of conduct will result in an instant ban hammer. Maintainers want healthy communities, filled with brilliant and passionate contributors who get along well and are good communicators and collaborators. They should be trusted to investigate complaints and, if necessary, mete out consequences that are proportional to the offense.
+</pre>
+<p>Yes because one "transphobic" tweet is a warrant to remove a contributor from a project.</p>
+<p>CoCs are trojan horses intended to ban people that you don't like. That's why terms like "hate speech" were pulled out of someone's ass.</p>
+<pre>
+A code of conduct does not grant any sort of authority to anyone outside the circle of maintainers. So-called "SJWs" are not the arbiters of the code of conduct, the project maintainers are. And guess what? Even without a code of conduct, project maintainers are within their rights to ARBITRARILY eject people from the community. Has this ever happened? Probably not. And it's even less likely to happen now that there is a SOCIAL CONTRACT between the maintainers and the members of the community.
+</pre>
+<p>That is true to some extent. But a CoC is just an indication that your maintenance is so shit you need a document saying "respect autists".</p>
+<pre>
+"Opalgate" has been mentioned a few times. I have serious regrets and misgivings about what I did in that situation. I have publicly apologized to both Elia and the project maintainer. And I learned my lesson: since then I have kept out of the politics of projects adopting codes of conduct, leaving it to the maintainers to decide what is best for their communities (as it should be). If you want to know both sides of the opal gate story, you should read my blog post about it: https://where.coraline.codes/blog/on-opalgate/
+</pre>
+<p>Great that you have learned... most likely nothing. People like you refuse to learn. Instead of shitting up project's issues on people needed to be removed, you're now going on 3 mile rants about the CIS WHITE MEN on Twitter.</p>
+<pre>
+It's true that I have made a number of critical statements about cis white males. That's because cis white males dominate the tech industry. To make progress, we need to critically examine the behavior of the majority. That doesn't mean that I hate men, hate white people, or hate anyone. My critique is simply of the majority, which happens to be white and male.
+</pre>
+<p>What?</p>
+<p>I'm guessing <a href="https://twitter.com/CoralineAda/status/1029162264979546112">this</a> doesn't exist!</p>
+<p>You hate men, you hate white people, you're "criticising" them because you think that they "dominate".</p>
+<p>50/50 equality will never, ever, ever be reached in the history of mankind, ever. Own up to that shit or shut the fuck up.</p>
+<pre>
+I can come across as angry on Twitter. That's my right. As a marginalized person in tech— a woman, transgender, with mental health issues, and significantly older than most of my peers— I face a lot of discrimination. I am a constant target of harassment, including doxing and death threats. A mentorship program that I announced last week was flooded with nearly 200k abusive applications including hate speech, homophobic, transphobic, and racist statements. Contact forms on my various websites have received thousands of abusive messages. So I have plenty to be angry about, and no one can or should police my emotions. They are mine and mine alone. If I want to "throw a tantrum" I am free to do so, within the rules and guidelines of the platform that I am using.
+</pre>
+<p>Boo-fucking-hoo. If you weren't an SJW twat and didn't contribute horseshit and didn't speak horseshit, maybe you would be respected. But no, you keep talking crap, you keep shoving a cancerous document in everyone's face and just because you're mentally ill and deluded you think that you deserve respect. No. I believe in true equality, and that is one where I can tell you to fuck off, and you can tell me to fuck off.</p>
+<br>
+<p>Conclusion: everything just got even stupider. I can't wait for this stupid thing to end.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Debinking the debunk: Linus Torvalds and Linux Code of Conduct: 7 myths debunked</title>
+<guid>https://x-t.github.io/src_2018.html#debinking-the-debunk-linus-torvalds-and-linux-code-of-conduct-7-myths-debunked</guid>
+<pubDate>Fri, 28 Sep 2018 19:52:54 +0300</pubDate>
+<description><![CDATA[
+<p>I've already stated my opinion on the Linux CoC drama/situation, currently we're not having any questions answered but we do keep getting more questions to ask. Anyway, I found <a href="https://www.zdnet.com/article/linus-torvalds-and-linux-code-of-conduct-myths/">this</a> article which is inherently pro-CoC, which I think is bullshit. Let's go.</p>
+<p><strong>Myth 1. The Linux kernel has been taken over by Social Justice Warriors (SJW)!</strong></p>
+<p>This is true, it might not have been "taken over", but their presence is now a part of project, as a CoC is a trojan horse.</p>
+<p>
+<pre>
+Hardly! The new CoC is based on Coraline Ada Ehmke's Contributor Covenant, version 1.4. It's been been adopted by many open-source projects such as Eclipse, Ruby, and Kubernetes.
+</pre>
+</p>
+<p>This does not mean that it's not SJW in any way. A large infiltration size does not equal to it not being SJW. It is simply wrong.</p>
+<p>
+<pre>
+Her sarcastic tweet ("I can't wait for the mass exodus from Linux now that it's been infiltrated by SJWs. Hahahah.") helped bring on the flames. 
+</pre>
+</p>
+<p>In what way is it sarcastic? You're implying things here, Ada is a hard-lined SJW that is serious about this shit, trying to shake it of as "hehe it was a joke" is simply wrong.</p>
+<p>
+<pre>
+Torvalds, with other senior Linux kernel developers, added the CoC. No one else did.
+</pre>
+</p>
+<p>Wrong. Greg made it and Torvalds approved the change, see the commit <a href="https://github.com/torvalds/linux/commit/8a104f8b5867c682d994ffa7a74093c54469c11f">here</a>.</p>
+<p><strong>Myth 2. Linus Torvalds left and then adopted the CoC to get ahead of The New Yorker article about his discouraging women from working on the kernel. </strong></p>
+<p>You're assuming shit again. State facts or don't fucking talk. We all have questions, don't try to be a Christian and scribble answers in Linus' name.</p>
+<p><strong>Myth 3. Nothing is going to change.</strong></p>
+<p>Not much should change in terms of the quality of the kernel, unless everything goes to shit, which is currently heading in that direction, as a CoC like that shook up and divided the community even more than it already was.</p>
+<p><strong>Myth 5. Purges of Linux kernel developers have begun.</strong></p>
+<p>Wrong. I don't know who said that, but you must've been looking hard for that or pulled it out of your ass.</p>
+<p><strong>Myth 6. Developers are leaving Linux and taking their code with them.</strong></p>
+<p>This is the same as "Myth 5". Stay consistent for fuck's sake.</p>
+<p><strong>Myth 7. Linus is never coming back!</strong></p>
+<p>Assumption. Linus talked about a vacation which we don't know the length of and he doesn't want to do anything with the kernel for a while. I'm sure he'll come back, but state it as an <em>opinion</em>, not a <em>fact</em>.</p>
+<br>
+<p>Conclusion: fake news. Make up your opinions, don't follow articles blindly.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Cool tools, pt. 3</title>
+<guid>https://x-t.github.io/src_2018.html#cool-tools-pt-3</guid>
+<pubDate>Fri, 21 Sep 2018 22:20:09 +0300</pubDate>
+<description><![CDATA[
+<p>This has definitely been done before (won't check), but I decided to hack another one.</p>
+<p>Wanna show what song you're listening to in cmus as a status for pidgin/purple and conky? Well, if you are one of the three people, this thing is for you.</p>
+<p>First, the script that shows the current track in a %SONG% - %ARTIST% format. (Referred to as CmusCurrent)</p>
+<pre>
+#!/bin/bash
+cmus-remote -Q | awk '/tag title / { $1=""; $2=""; print } /tag artist / { $1=""; $2=""; print }' | tac | sed ':a;N;$!ba;s/&bsol;n/ /g; s/^&bsol; &bsol; //; s/&bsol; &bsol; &bsol; /&bsol; -&bsol; /'
+</pre>
+<p>Next, the script that sets the status/outputs the song (Referred to as PurpleCmus)</p>
+<pre>
+#!/bin/bash
+if [[ `cmus-remote -Q | grep status` == "status playing" ]]; then 
+purple-remote "setstatus?status=available&amp;message=`CmusCurrent`"
+CmusCurrent
+fi
+</pre>
+<p>And lastly, the line in your conky.conf</p>
+<pre>
+${execi 2 /%PATH_TO%/PurpleCmus}
+</pre>
+<p>That's about it. Now you can shove in your music taste to anyone that has you added as a buddy on pidgin.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>The Linux code of conduct</title>
+<guid>https://x-t.github.io/src_2018.html#the-linux-code-of-conduct</guid>
+<pubDate>Wed, 19 Sep 2018 00:29:50 +0300</pubDate>
+<description><![CDATA[
+<p><a href="https://x-t.github.io/blog/2018.html#politics-has-no-place-in-software">I've already stated</a> that politics in software is a cancer ruining everything. Thing is, politics anywhere, ruins everything. But that's not the point.</p>
+<p>That post was about politics-related licenses, and why they're dogshit. There was a point I never touched, which were codes of conduct. Everyone already talked about them, and there was nothing much I could add.</p>
+<p>A good example of a shitty CoC was the FreeBSD project. People flunked out and left ports behind because of the cancer that reached the core FreeBSD team.</p>
+<p>It was a good shitshow, because no one uses FreeBSD. Everyone laughed, the core team were butthurt to the bones and kept blocking everyone on Twitter, etc.</p>
+<p>But there's one biological thing about cancer, and that is - it spreads. It's always spreading, slow or fast, it's duplicating. And it has reached a part of the sector that people actually <em>do</em> care about. It's Linux, the kernel.</p>
+<p>The old code of conflict was replaced with a code of conduct - <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=8a104f8b5867c682d994ffa7a74093c54469c11f">git log</a>.</p>
+<p>Now, it would be fine if it was as sensible as the old code of conflict.</p>
+<p>HHAHAHAHA, of course it isn't. Why the fuck would I be writing about it then?</p>
+<p>The thing about codes of conduct is that they are <em>political</em>, it may be the <a href="https://github.com/domgetter/NCoC">No code of conduct</a> protesting against code of conducts or LITERALLY EVERYTHING ELSE that are full of idiotic bullshit.</p>
+<p><em>What CoC did Linux choose?</em></p>
+<p>It chose the Contributor Covenant code of conduct. Let's look at it.</p>
+<pre>
++In the interest of fostering an open and welcoming environment, we as
++contributors and maintainers pledge to making participation in our project and
++our community a harassment-free experience for everyone, regardless of age, body
++size, disability, ethnicity, sex characteristics, gender identity and
++expression, level of experience, education, socio-economic status, nationality,
++personal appearance, race, religion, or sexual identity and orientation.
+</pre>
+<p>Already, the question comes up - why? Why in the fuck did you need to write all this bullshit? Isn't a simple</p>
+<pre>
+Don't discriminate.
+</pre>
+<p>enough? Apparently not.</p>
+<pre>
++* Using welcoming and inclusive language
++* Being respectful of differing viewpoints and experiences
++* Gracefully accepting constructive criticism
++* Focusing on what is best for the community
++* Showing empathy towards other community members
+</pre>
+<p>Alright, fine, but how about</p>
+<pre>
+Be nice.
+</pre>
+<p>Seriously, these piles of stinking shit are needlessly long and bring no real point.</p>
+<pre>
++This Code of Conduct applies both within project spaces and in public spaces
++when an individual is representing the project or its community.
+</pre>
+<p>This is the part that makes CoCs different from the rules and from the project. ...right?</p>
+<p>Mostly, the people that maintain contributions also maintain the discussion channels. So, no, this means nothing, if you are banned from the mailing list, your pull request might be denied anyway.</p>
+<p>And remember, that the CoC means jack shit for unofficial discussion channels/forks. The CoC can be ignored and removed. As much as Rustees don't want to admit, there is a Nazist Rust user group somewhere in Discord.</p>
+<p>Enough about that, let's look at the people behind the CoC.</p>
+<p>I'll look at two people here</p>
+<ul>
+    <li>Contributor Covenant author - Coraline Ada</li>
+    <li>The man, the legend - Linus Torvalds</li>
+</ul>
+<p><strong>Ada</strong></p>
+<p>Ada is well known for shittying up everything involving its name.</p>
+<p>Good example - <a href="https://github.com/opal/opal/issues/941">Issue #941 @ opal/opal</a>. It's an interesting read if you have the time.</p>
+<p>In short, Ada's fucking stupid. Just like anyone like it.</p>
+<p>But let's look at its reaction to its CoC getting added to Linux.</p>
+<p><a href="https://twitter.com/CoralineAda/status/1041465346656530432"><img src="../resources/img_blog/linux_coc/ada_politics.png" alt="Ada's politics"></a></p>
+<p><a href="https://twitter.com/CoralineAda/status/1041441155874009093"><img src="../resources/img_blog/linux_coc/ada_sjw.png" alt="Ada is doubling down on SJWism"></a></p>
+<p>...</p>
+<p>Let me repeat again - politics is a cancer. It ruins everything it touches. Do you know what this cancer did? It touched Linux.</p>
+<p>There's nothing much to say more about Ada. It's very happy and is doubling down on being a retard.</p>
+<p><strong>Linus</strong></p>
+<p>The man, is clearly broken.</p>
+<p>He's going on vacation, to "learn into empathy", but something is just not right, and it shows.</p>
+<p><a href="https://www.reddit.com/r/linux/comments/9go8cp/linus_torvalds_daughter_has_signed_the/">His daughter signed the post-meritocracy manifesto made by Ada</a></p>
+<p><a href="https://www.youtube.com/watch?v=Hzj4zIZJkWg">He doesn't want to go to his conference</a></p>
+<p>It's an absolute shit show, and one thing is in danger - Linus. The part of the Linux kernel that makes it work.</p>
+<p><strong>Conclusion</strong></p>
+<p>The core of open source is not discriminating. Codes of conduct are a good example of how that ideology is failing.</p>
+<p>Politics is a cancer. I'm saying this probably the 500th time, but here is no other way to put it. Open-mindedness and sanity are rare nowadays, and it shows.</p>
+<p><em>Dark days ahead, strap in.</em></p>
+<p><img src="../resources/img_blog/linux_coc/linux_rip.png" alt="RIP Linux"></p>
+<p>P.S - if you're thinking about moving to OpenBSD, I'll laugh at you, and you'll want to shoot yourself when you realise that to get your mouse to even marginally work you'll need to write a 1000 line Xorg.conf file</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Updated license, source code</title>
+<guid>https://x-t.github.io/src_2018.html#updated-license-source-code</guid>
+<pubDate>Tue, 18 Sep 2018 20:05:14 +0300</pubDate>
+<description><![CDATA[
+<p>Just because it was now convenient to do so, and my source code got a lot cleaner, I made my site's source code public.</p>
+<p>It's hosted on GitHub, check it out <a href="https://github.com/x-t/x-t.github.io">here</a>.</p>
+<p>I also switched to the GPLv3, replacing the previous BSD-2-Clause license.</p>
+<p>Although you probably shouldn't contribute, you can look at the source code.</p>
+<p>And maybe repurpose the build system if you want, I don't know. It's just open, that's all.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Cool tools, pt. 2</title>
+<guid>https://f00f.me/src_2018.html#cool-tools-pt-2</guid>
+<pubDate>Fri, 14 Sep 2018 21:25:49 +0300</pubDate>
+<description><![CDATA[
+<p>This one is useful when you want to copy some source code to an HTML page (like these series) and you want to do it from a shell.</p>
+<pre>
+#!/bin/bash
+cat $1 | sed 's/&bsol;&amp;/&bsol;&amp;amp&bsol;;/g; s/&lt;/&bsol;&amp;lt&bsol;;/g; s/&gt;/&bsol;&amp;gt&bsol;;/g; s/&bsol;&bsol;/&bsol;&amp;bsol&bsol;;/g'
+</pre>
+<br>
+]]></description>
+</item>
+
+
+<item>
+<title>New website, why and how</title>
+<guid>https://f00f.me/src_2018.html#new-website-why-and-how</guid>
+<pubDate>Fri, 14 Sep 2018 20:39:51 +0300</pubDate>
+<description><![CDATA[
+<p>Replacing the entire infrastructure of a website isn't an usual thing to do.</p>
+<p>I thought that I'd make a blog post explaining why this new website was made and how it works.</p>
+<p>Maybe anyone reading this could get some inspiration to do something similar? Don't know, either way this post is really just to test the blogging capabilities of this new infrastructure.</p>
+<p>Better than a "this is a test" post, so let's start.</p>
+<p><strong>Why?</strong></p>
+<p>Money.</p>
+<p>Seriously, that's it. Hosting shit is not free and I don't have any money to spend on this project. So I had to come up with a solution that would replace my current infrastructure with something free.</p>
+<p>My first idea was neocities, but I also knew that GitHub pages existed, so I went for the latter because neocities' editor is complete garbage.</p>
+<p>However, a problem, my entire infrastructure is written with PHP. And these services only allow static website hosting. I needed to be little clever about it.</p>
+<p>So, let's move on to the</p>
+<p><strong>How?</strong></p>
+<p>The ways that my website depended on PHP were these:</p>
+<ol>
+    <li>Using <pre>&lt;php? include(); ?&gt;</pre> statements</li>
+    <li>My analytics system was written entirely with PHP</li>
+</ol>
+<p>For analytics, I could just remove them. Sad, but what can you do.</p>
+<p>For the former, I decided to not just scrap the idea of handy one-line include statements and make my own system for using them.</p>
+<p>It's written in awk and it's some high level web engineering shit.</p>
+<p>For an example, take this template page</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;template&lt;/title&gt;
+    &lt;!-- HEAD --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- NOSCRIPT --&gt;
+    &lt;!-- CONTACT --&gt;
+    &lt;!-- NAVBAR --&gt;
+
+    &lt;div class="c"&gt;
+        Content
+    &lt;/div&gt;
+    &lt;!-- COPYRIGHT --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>This is a similar system that lb, the blog system I use here, uses. Instead of appending text, this solution just replaces the template parts with text.</p>
+<p>To make a page that works though, you need to compile it. I use an awk script that looks like this:</p>
+<pre>
+function ReadFile(file)
+{
+    x = ""
+    while ((getline y &lt; file) &gt; 0) {
+        x = x FS y FS "&bsol;n"
+    }
+    return x
+}
+
+BEGIN {
+    r_head = ReadFile("../resources/stdhead.html")
+}
+
+{
+gsub(/&lt;!-- HEAD --&gt;/, r_head)
+print
+}
+</pre>
+<p>You run it from the shell with <pre>awk -f script.awk file_to_compile.html &gt; compiled_file.html</pre></p>
+<p>This will replace the HEAD token with whatever is in resources/stdhead.html. Making it work exactly the same as</p>
+<pre>
+&lt;?php include("../resources/stdhead.html"); ?&gt;
+</pre>
+<p>It works, I get to run away from the burning dumpster that PHP is and the hosting is free. Pretty neat.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Politics has no place in software</title>
+<guid>https://f00f.me/2018.php#politics-has-no-place-in-software</guid>
+<pubDate>Thu, 30 Aug 2018 11:30:46 +0300</pubDate>
+<description><![CDATA[
+<p>Currently there has been a lot of bullshit surrounding the name "open-source".</p>
+<p>Probably the latest one so far are so-called anti-fascist licenses. These are stinking turds that are a cancer to everyone.</p>
+<p>Go look at one, right now, here's one <a href="https://github.com/jamiebuilds/anti-fascist-mit-license">here</a></p>
+<p>First of all this dumbass put MIT's name of a license they did not fucking make. Second, </p>
+<pre>
+ANTI-FASCIST LICENSE:
+
+The following conditions must be met by any person obtaining a copy of this
+software:
+
+- You MAY NOT be a fascist.
+- You MUST not financially support fascists.
+- You MUST not publicly voice support for fascists.
+
+"Fascist" can be understood as any entity which supports radical authoritarian
+nationalism. For example: Donald Trump is a fascist; if you donated to his
+campaign then all rights provided by this license are not granted to you.
+</pre>
+<p>Ever had an open-minded discussion about politics? Ever didn't gobble down all the shit from the far-left/right? Guess what, stay away from muh software now!</p>
+<p>Here's another one (only taking the snippet from it, because the same fucktard just attached political cancer onto MIT)</p>
+<pre>
+The following license shall not be granted to the following entities or any
+subsidiary thereof due to their collaboration with US Immigration and Customs
+Enforcement ("ICE"):
+
+- "Microsoft Corporation"
+- "Palantir Technologies"
+- "Amazon.com, Inc."
+- "Northeastern University"
+- "Ernst & Young"
+- "Thomson Reuters"
+- "Motorola Solutions"
+- "Deloitte Consulting LLP"
+- "Johns Hopkins University"
+- "Dell Inc"
+- "Xerox Corporation"
+- "Canon Inc"
+- "Vermont State Colleges"
+- "Charter Communications"
+- "LinkedIn Corporation"
+- "United Parcel Service Co"
+</pre>
+<p>This is hosted on Github, mind you, so not only are they using Microsoft's software here but also telling them to not use their software.</p>
+<p>Why is there an issue with this? Well, this is <b>NOT</b> open source or free software by definition.</p>
+<p>Here's a snippet from the <a href="https://opensource.org/osd">open source definition</a></p>
+<pre>
+5. No Discrimination Against Persons or Groups
+
+The license must not discriminate against any person or group of persons.
+6. No Discrimination Against Fields of Endeavor
+
+The license must not restrict anyone from making use of the program in a specific field of endeavor. For example, it may not restrict the program from being used in a business, or from being used for genetic research.
+</pre>
+<p>Too legal-sounding? Here's the simplified version from their <a href="https://opensource.org/faq#evil">FAQ</a></p>
+<pre>
+Can I stop "evil people" from using my program?
+
+    No. The Open Source Definition specifies that Open Source licenses may not discriminate against persons or groups. Giving everyone freedom means giving evil people freedom, too.
+</pre>
+<p>The lack of these retards' understanding that freedom means freedom for <b>EVERYONE</b> is <a href="https://github.com/jamiebuilds/anti-fascist-mit-license/issues/12">abundantly</a> <a href="https://github.com/jamiebuilds/anti-fascist-mit-license/issues/8">clear</a></p>
+<p>The Free Software Foundation also has problems with licenses like these:</p>
+<pre>
+I'd like to license my code under the GPL, but I'd also like to make it clear that it can't be used for military and/or commercial uses. Can I do this? (#NoMilitary)
+
+    No, because those two goals contradict each other. The GNU GPL is designed specifically to prevent the addition of further restrictions. GPLv3 allows a very limited set of them, in section 7, but any other added restriction can be removed by the user.
+
+    More generally, a license that limits who can use a program, or for what, is not a free software license.
+</pre>
+<p><small><a href="https://www.gnu.org/licenses/gpl-faq.en.html#NoMilitary">source</a></small></p>
+<p>Open source means getting work done, whether you're white, black, gay or straight or whatever. Shit like this makes a big example at how mentally ill the scene of software development has gotten.</p>
+<p>Although small, it's good that we have people like Stallman keeping abortion jokes and Torvalds telling you to fuck off because you're stupid. It brings a bit more positive light in this sea of shit.</p>
+<p>If you were offended by this blog post - you deserve to be offended. I used insults directly to the people I want to tell to fuck off this planet, although admitedly childish, it illustrates my point. Intonation over text is not possible.</p>
+<p>And remember: </p>
+<pre>
+I like offending people, because I think people who get offended should be offended.
+    - Linus Torvalds
+</pre>
+<p>:^)</p>
+]]></description>
+</item>
+
+
+<item>
+<title>Cool tools, pt. 1</title>
+<guid>https://f00f.me/2018.php#cool-tools-pt.-1</guid>
+<pubDate>Mon, 27 Aug 2018 23:56:41 +0300</pubDate>
+<description><![CDATA[
+<p>Sometimes I just make tools to make my doodly-doos around the computer a little easier.</p>
+<p>Since I think these are too small to have their own git repository or something, I thought I'd share these in my blog.</p>
+<p>However many I'll write/release, they'll be "licensed" under CC0. Practically public domain, and if your state/country doesn't have public domain - it'll still act like it.</p>
+<p>The first in the series is a small thing I made to learn awk. It counts your music by formats.</p>
+<p>FLAC sound molesters can flex their RAID arrays with this.</p>
+<p>Here's the source code:</p>
+<pre>
+#!/bin/bash
+
+find ./ | awk '
+
+BEGIN {
+    AllMusic=0
+    Flacs=0
+    MPThrees=0
+    MFourAs=0
+    WAVs=0
+}
+
+/flac$/ {
+    AllMusic++
+    Flacs++
+}
+
+/mp3$/ {
+    AllMusic++
+    MPThrees++
+}
+
+/m4a$/ {
+    AllMusic++
+    MFourAs++
+}
+
+/wav$/ {
+    AllMusic++
+    WAVs++
+}
+
+END {
+    print "Total music:", AllMusic
+    print "FLACs:", Flacs
+    print "MP3s:", MPThrees
+    print "M4As:", MFourAs
+    print "WAVs:", WAVs
+}
+'
+</pre>
+<p>Of course there are some issues with this, like not supporting every music format in existance. But you can easily edit it, if you would like to do that.</p>
+<p>If you're wondering what my music collection looks like, well...</p>
+<pre>
+~/Music&gt; CountMusic
+Total music: 560
+FLACs: 367
+MP3s: 138
+M4As: 54
+WAVs: 1
+~/Music&gt; 
+</pre>
+<p>I'll leave it there.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>So I have a blog now</title>
+<guid>https://f00f.me/2018.php#so-i-have-a-blog-now</guid>
+<pubDate>Mon, 27 Aug 2018 23:20:15 +0300</pubDate>
+<description><![CDATA[
+<p>Yeah, I set up a blog.</p>
+<p>No particular reason, I just thought that I'd have one.</p>
+<p>This runs on lb, a tool made by all-mighty Luke Smith. Tumblr can lick my left nut.</p>
+<p>I'm not a blog guy by any means, so expect absolutely no new blog posts.</p>
+<p>Maybe they will be memes at best, either way, it's fun setting up shit like this, which is why I do it, even though I may end up never using it.</p>
+]]></description>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+</channel>
+</rss>
+

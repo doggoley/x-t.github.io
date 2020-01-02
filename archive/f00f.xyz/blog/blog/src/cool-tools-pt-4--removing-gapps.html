@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cool tools, pt. 4 - Removing gapps</title>
+<!-- HEAD -->
+<!-- DESC 'Blog 2019-01-02 - Cool tools, pt. 4 - Removing gapps' -->
+</head>
+<body>
+<!-- HEADER -->
+<div class="entry blog">
+<h1 id='cool-tools-pt-4--removing-gapps'>Cool tools, pt. 4 - Removing gapps</h1>
+<small>[<a href="../2018.html#cool-tools-pt-4--removing-gapps">link</a>&mdash;<a href="../blog/cool-tools-pt-4--removing-gapps.html">standalone</a>]</small>
+
+<p>Sometimes a man just needs to install Google apps and to remove them afterwards. For example maybe to download something from the play store or to try something out.</p>
+<p>After you did your... whatever, you may be staggered to learn that there is no official way to uninstall gapps.</p>
+<p>The recommended way is to wipe and reinstall everything, well, not all of us have the time to do that. So, a solution - forcefully uninstall gapps.</p>
+<p>Things needed for this -</p>
+<ul>
+	<li>TWRP</li>
+	<li>The same ROM as you currently have (flashable zip)</li>
+</ul>
+<p>CWM is dead anyway, there is no real reason to use it.</p>
+<p><strong>Step 1</strong></p>
+<p>Wipe /system, just go to Wipe -> Advanced wipe -> [x] System -> Wipe</p>
+<p><strong>Step 2</strong></p>
+<p>Open up the terminal, go to Advanced -> Terminal, and type these</p>
+<pre>
+# cd /data
+# find ./ | grep google | xargs rm -rf
+</pre>
+<p>(keep in mind # means that it's ran as root, not a comment.)</p>
+<p><strong>Step 3</strong></p>
+<p>Flash your ROM, just make sure that it's the same - dirty flashing different ROMs ends badly most of the time.</p>
+<p><strong>Step 4</strong></p>
+<p>Clear cache/dalvik and reboot!</p>
+<br>
+<p>There, gapps is now gone. It's a hack, but it works. And it works better than reflashing as this actually deletes gapps, while reinstalling a ROM would just not recognize the already existing gapps.</p>
+<p>Not really a tool, but I wish I had known this before I needlessly wiped a few installs.</p>
+<footer>by <strong><a href="https://x-t.github.io/">cmp</a></strong></footer>
+</div>
+</body>
+</html>

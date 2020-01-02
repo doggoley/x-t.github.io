@@ -1,0 +1,44 @@
+/* zxyz you fucking sandnigger, don't dare touch this */
+/* (c) 2019, fresh (freesh.xyz) - Nigger.Technology Corp */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.ekre-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 60%;
+}
+
+.signature {
+  text-align: right !important;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bong.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    z-index: -1;
+}

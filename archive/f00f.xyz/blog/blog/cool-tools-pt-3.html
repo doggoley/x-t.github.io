@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cool tools, pt. 3</title>
+ <!-- Copyright (C) zxyz. Licensed under BSD-2-Clause --> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="../../resources/css/style.min.css"> 
+ <link rel="shortcut icon" href="../../resources/img/favicon.ico" type="image/x-icon"> 
+
+<meta name="description" content='Blog 2018-09-21 - Cool tools, pt. 3'>
+</head>
+<body>
+  <div style="display:none;"><p>Although I do my best to make this site compliant with all browsers, not having CSS is a big miss on this one. Consider coming out of that CLIshit browser, you fatass neckbeard.</p></div>  
+  
+  <div id="Navbar">  
+      <a href="../../index.html" class="f-l"><img src="../../resources/img/pfp.png" width="24" height="24" alt="" id="ProfilePic"><span> zxyz</span></a>  
+      <a href="../../reviews/index.html" class="f-r">Reviews</a> 
+      <a href="../../blog/blogindex.html" class="f-r">Blog</a>  
+      <a href="../../places.html" class="f-r">Places</a>  
+      <a href="../../about.html" class="f-r">About</a>  
+  </div>  
+  
+ <div class="background"></div> 
+
+<div class="entry blog">
+<h1 id='cool-tools-pt-3'>Cool tools, pt. 3</h1>
+<small>[<a href="../2018.html#cool-tools-pt-3">link</a>&mdash;<a href="../blog/cool-tools-pt-3.html">standalone</a>]</small>
+
+<p>This has definitely been done before (won't check), but I decided to hack another one.</p>
+<p>Wanna show what song you're listening to in cmus as a status for pidgin/purple and conky? Well, if you are one of the three people, this thing is for you.</p>
+<p>First, the script that shows the current track in a %SONG% - %ARTIST% format. (Referred to as CmusCurrent)</p>
+<pre>
+#!/bin/bash
+cmus-remote -Q | awk '/tag title / { $1=""; $2=""; print } /tag artist / { $1=""; $2=""; print }' | tac | sed ':a;N;$!ba;s/&bsol;n/ /g; s/^&bsol; &bsol; //; s/&bsol; &bsol; &bsol; /&bsol; -&bsol; /'
+</pre>
+<p>Next, the script that sets the status/outputs the song (Referred to as PurpleCmus)</p>
+<pre>
+#!/bin/bash
+if [[ `cmus-remote -Q | grep status` == "status playing" ]]; then 
+purple-remote "setstatus?status=available&amp;message=`CmusCurrent`"
+CmusCurrent
+fi
+</pre>
+<p>And lastly, the line in your conky.conf</p>
+<pre>
+${execi 2 /%PATH_TO%/PurpleCmus}
+</pre>
+<p>That's about it. Now you can shove in your music taste to anyone that has you added as a buddy on pidgin.</p>
+<footer>by <strong><a href="https://x-t.github.io/">cmp</a></strong></footer>
+</div>
+</body>
+</html>

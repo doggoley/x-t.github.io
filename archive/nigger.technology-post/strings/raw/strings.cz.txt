@@ -1,0 +1,30 @@
+loc-navbar-home technologie pro negry
+loc-navbar-about O nás
+loc-navbar-gallery Galerie
+loc-navbar-fresh fresh
+
+loc-index-1 67 procent černých dětí vyrůstá v domácnostech s jedním rodičem.
+loc-index-2 V roce 2017 tvořili černoši 13% americké populace, ale 43% nových diagnóz HIV.
+loc-index-3 Přestože tvořili 13% obyvatelstva, černoši v roce 2016 spáchali 51,6% všech vražd.
+loc-index-4 Míra nezaměstnanosti byla výrazně vyšší u etnických menšin na 12,9% ve srovnání s 6,3% u bílých lidí.
+loc-index-5 Míra vraždy pro černochy byla 30,5 na milion obyvatel, 14,1 pro asijské lidi a 8,9 pro bílé lidi.
+loc-index-6 Černošské ženy měly ve Spojeném království čtyřikrát vyšší úmrtnost než bílé ženy
+loc-index-7 Černé úmrtí dětí na 1 000 živě narozených dětí: 10,97, počet bílých dětí na 1 000 živě narozených dětí: 4,67.
+
+loc-gallery velmi dobrá galerie
+
+loc-fresh-head1 Zábavné fakty o teplouších
+loc-fresh-1 Odhadovaných 632 300 homosexuálů a bisexuálů mělo HIV na konci roku 2015, což představuje 56% všech s HIV.
+loc-fresh-2 1 z 6 homosexuálních a bisexuálních mužů s HIV si neuvědomuje, že ji mají.
+loc-fresh-3 Homosexuální mládež v amerických školách je často vystavena takovému intenzivnímu šikanování, že nedokáže získat odpovídající vzdělání.
+loc-fresh-4 Jeden průzkum ukázal, že více než třetina homosexuálních respondentů minulý měsíc vynechala celý den školy, protože se tam cítili nebezpečně.
+loc-fresh-5 LGBT mládež má pocit, že se nemají kam obrátit.
+loc-fresh-6 Homosexuální, lesbická, bisexuální a transsexuální mládež je více než dvojnásobná pravděpodobnost experimentování s drogami a alkoholem.
+loc-fresh-7 Riziko sebepoškozování LGBT mládeže je 2,5krát vyšší.
+loc-fresh-head2 TL;DR: NEBUDTE TEPLÝ, BUDOU SE VÁM AKORÁT SMÁT A BUDETE SE CEJTIT NA HOVNO A ZABIJETE SE S DROGAMA A ALKOHOLEM
+
+loc-about-by Stránka byla vytvořena:
+loc-about-translations Překlady
+loc-about-offended Cítíte se uražený?
+loc-about-blow Smůla
+loc-about-email Kontaktuj nás na našem emailu

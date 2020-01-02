@@ -1,0 +1,38 @@
+/***********************************************
+ * Copyright (C) zxyz
+ * Licensed under the BSD-2-Clause license
+ * 
+ * License - https://x-t.github.io/COPYING.md
+ ***********************************************/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F5F5F5;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.procon {
+	color: #838484;
+	text-align: center;
+}
+
+h1, h2, h4 {
+	text-align: center;
+}

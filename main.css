@@ -1,0 +1,128 @@
+body {
+	font-family: Arial;
+	background-color: #0c0d0d;
+	font-size: 11pt;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.favico {
+	position: static;
+	vertical-align: middle;
+	border-radius: 10%;
+	animation: favico 0.5s ease-out;
+}
+
+.ripTerry {
+	display: none;
+	margin-bottom: 200px;
+}
+
+.c {
+	text-align: center;
+}
+
+.main {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.border {
+	position: static;
+	text-align: left;
+	display: inline-block;
+	max-width: 60%;
+}
+
+.list {
+	font-size: 140%;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    z-index: -2;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.flake {
+	font-size: 50%;
+	display: block;
+	position: fixed;
+}
+
+.hSpacer {
+	display: inline;
+	margin-left: 20px;
+}
+
+.linkWork {
+	min-width: 100px;
+}
+
+.contactList {
+	font-size: 120%;
+}
+
+.content {
+	overflow: hidden;
+	position: static;
+	animation: content 0.55s ease-out;
+}
+
+@keyframes content {
+	0% {
+		transform: translateY(5%);
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes favico {
+	0% {
+		height: 96px;
+		width: 96px;
+	}
+
+	100% {
+		height: 128px;
+		width: 128px;
+	}
+}
+
+@media only screen and (max-width: 768px) { 
+	.border {
+		text-align: left;
+		display: inline-block;
+		max-width: 90%;
+	}
+}

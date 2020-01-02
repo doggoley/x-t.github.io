@@ -1,0 +1,217 @@
+/*******************************************
+ * Licensed under BSD-2-Clause
+ * More info - https://f00f.me/src
+ * License - https://f00f.me/src/LICENSE.txt
+ *******************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #2c2c2d;
+}
+
+.c {
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #2c2c2d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: 0;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor:pointer;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.r {
+    float: right;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0,0,0,.4);
+}
+
+.overlayContent {
+    background-color: #565659;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+}
+
+.overlayClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.overlayClose:focus,.overlayClose:hover {
+    color:#000;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.copyright {
+    left:0;
+    bottom: 0;
+    width: 100%;
+}
+
+.aboutContent {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.blog {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.l {
+    text-align: left;
+    display: inline-block;
+}
+
+.sup {
+  position: relative;
+  bottom: 1ex; 
+  font-size: 70%;
+}
+
+pre {
+    display: inline;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 90%;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#DesktopBar {
+    display: none;
+}
+
+#MobileBar {
+    display: block;
+}
+
+/* blog entry */
+.entry {
+	border-left: 10px solid darkslategray;
+	padding: 0px 10px 0px 10px;
+	border-radius: 0 30px 30px 0;
+	margin-bottom: 20px;
+	background-color: #525254;
+}
+
+@media only screen and (min-width: 768px) {
+    .overlayContent {
+        background-color: #565659;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 40%;
+        color: white;
+    }
+
+    .aboutContent {
+        margin-left: 50px;
+        margin-right: 50px;
+        display: inline-block;
+    }
+
+    #DesktopBar {
+        display: block;
+    }
+
+    #MobileBar {
+        display: none;
+    }
+
+    .blog {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}

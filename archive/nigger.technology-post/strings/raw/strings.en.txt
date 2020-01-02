@@ -1,0 +1,30 @@
+loc-navbar-home nigger.technology
+loc-navbar-about About
+loc-navbar-gallery gallery
+loc-navbar-fresh fresh
+
+loc-index-1 67 percent of black children grow up in single-parent homes
+loc-index-2 In 2017, blacks accounted for 13% of the US population but 43% of the new HIV diagnoses
+loc-index-3 Despite making up 13% of the population, black people committed 51.6% of all murders in 2016.
+loc-index-4 Unemployment rates were significantly higher for ethnic minorities at 12.9 per cent compared with 6.3 per cent for White people
+loc-index-5 The homicide rate for Black people was 30.5 per million population, 14.1 for Asian people and 8.9 for White people
+loc-index-6 Black African women had a mortality rate four times higher than White women in the UK
+loc-index-7 Black infant deaths per 1,000 live births: 10.97, white infant deaths per 1,000 live births: 4.67
+
+loc-gallery very good gallery
+
+loc-fresh-head1 fun facts about gays
+loc-fresh-1 An estimated 632,300 gay and bisexual men had HIV at the end of 2015, representing 56% of everyone with HIV.
+loc-fresh-2 1 in 6 gay and bisexual men with HIV are unaware they have it.
+loc-fresh-3 Gay teens in U.S. schools are often subjected to such intense bullying that they’re unable to receive an adequate education.
+loc-fresh-4 One survey revealed that more than one-third of gay respondents had missed an entire day of school in the past month because they felt unsafe there.
+loc-fresh-5 LGBT youth feel they have nowhere to turn.
+loc-fresh-6 Gay, lesbian, bisexual and transgender youth are more than twice as likely to experiment with drugs and alcohol.
+loc-fresh-7 The risk of self-harm among LGBT youth is 2,5 times more likely.
+loc-fresh-head2 TL;DR: DON'T BE GAY, YOU'RE GONNA GET BULLIED, YOU'RE GONNA FEEL SHIT, AND YOU'RE GONNA KILL YOURSELF WITH DRUGS AND ALCOHOL.
+
+loc-about-by Site made by
+loc-about-translations Translations
+loc-about-offended Offended?
+loc-about-blow Blow it out your ass.
+loc-about-email Contact the corp via our email

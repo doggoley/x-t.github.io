@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cool tools, pt. 1</title>
+<!-- HEAD -->
+<!-- DESC 'Blog 2018-08-27 - Cool tools, pt. 1' -->
+</head>
+<body>
+<!-- HEADER -->
+<div class="entry blog">
+<h1 id='cool-tools-pt.-1'>Cool tools, pt. 1</h1>
+<small>[<a href="../2018.php#cool-tools-pt.-1">link</a>&mdash;<a target="_blank" href="../blog/cool-tools-pt.-1.html">standalone</a>]</small>
+
+<p>Sometimes I just make tools to make my doodly-doos around the computer a little easier.</p>
+<p>Since I think these are too small to have their own git repository or something, I thought I'd share these in my blog.</p>
+<p>However many I'll write/release, they'll be "licensed" under CC0. Practically public domain, and if your state/country doesn't have public domain - it'll still act like it.</p>
+<p>The first in the series is a small thing I made to learn awk. It counts your music by formats.</p>
+<p>FLAC sound molesters can flex their RAID arrays with this.</p>
+<p>Here's the source code:</p>
+<pre>
+#!/bin/bash
+
+find ./ | awk '
+
+BEGIN {
+    AllMusic=0
+    Flacs=0
+    MPThrees=0
+    MFourAs=0
+    WAVs=0
+}
+
+/flac$/ {
+    AllMusic++
+    Flacs++
+}
+
+/mp3$/ {
+    AllMusic++
+    MPThrees++
+}
+
+/m4a$/ {
+    AllMusic++
+    MFourAs++
+}
+
+/wav$/ {
+    AllMusic++
+    WAVs++
+}
+
+END {
+    print "Total music:", AllMusic
+    print "FLACs:", Flacs
+    print "MP3s:", MPThrees
+    print "M4As:", MFourAs
+    print "WAVs:", WAVs
+}
+'
+</pre>
+<p>Of course there are some issues with this, like not supporting every music format in existance. But you can easily edit it, if you would like to do that.</p>
+<p>If you're wondering what my music collection looks like, well...</p>
+<pre>
+~/Music&gt; CountMusic
+Total music: 560
+FLACs: 367
+MP3s: 138
+M4As: 54
+WAVs: 1
+~/Music&gt; 
+</pre>
+<p>I'll leave it there.</p>
+<footer>by <strong><a href="https://f00f.me/">cmp</a></strong></footer>
+</div>
+</body>
+</html>

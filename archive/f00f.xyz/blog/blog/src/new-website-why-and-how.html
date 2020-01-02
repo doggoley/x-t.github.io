@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>New website, why and how</title>
+<!-- HEAD -->
+<!-- DESC 'Blog 2018-09-14 - New website, why and how' -->
+</head>
+<body>
+<!-- HEADER -->
+<div class="entry blog">
+<h1 id='new-website-why-and-how'>New website, why and how</h1>
+<small>[<a href="../src_2018.html#new-website-why-and-how">link</a>&mdash;<a href="../blog/new-website-why-and-how.html">standalone</a>]</small>
+
+<p>Replacing the entire infrastructure of a website isn't an usual thing to do.</p>
+<p>I thought that I'd make a blog post explaining why this new website was made and how it works.</p>
+<p>Maybe anyone reading this could get some inspiration to do something similar? Don't know, either way this post is really just to test the blogging capabilities of this new infrastructure.</p>
+<p>Better than a "this is a test" post, so let's start.</p>
+<p><strong>Why?</strong></p>
+<p>Money.</p>
+<p>Seriously, that's it. Hosting shit is not free and I don't have any money to spend on this project. So I had to come up with a solution that would replace my current infrastructure with something free.</p>
+<p>My first idea was neocities, but I also knew that GitHub pages existed, so I went for the latter because neocities' editor is complete garbage.</p>
+<p>However, a problem, my entire infrastructure is written with PHP. And these services only allow static website hosting. I needed to be little clever about it.</p>
+<p>So, let's move on to the</p>
+<p><strong>How?</strong></p>
+<p>The ways that my website depended on PHP were these:</p>
+<ol>
+    <li>Using <pre>&lt;php? include(); ?&gt;</pre> statements</li>
+    <li>My analytics system was written entirely with PHP</li>
+</ol>
+<p>For analytics, I could just remove them. Sad, but what can you do.</p>
+<p>For the former, I decided to not just scrap the idea of handy one-line include statements and make my own system for using them.</p>
+<p>It's written in awk and it's some high level web engineering shit.</p>
+<p>For an example, take this template page</p>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;template&lt;/title&gt;
+    &lt;!-- HEAD --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- NOSCRIPT --&gt;
+    &lt;!-- CONTACT --&gt;
+    &lt;!-- NAVBAR --&gt;
+
+    &lt;div class="c"&gt;
+        Content
+    &lt;/div&gt;
+    &lt;!-- COPYRIGHT --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<p>This is a similar system that lb, the blog system I use here, uses. Instead of appending text, this solution just replaces the template parts with text.</p>
+<p>To make a page that works though, you need to compile it. I use an awk script that looks like this:</p>
+<pre>
+function ReadFile(file)
+{
+    x = ""
+    while ((getline y &lt; file) &gt; 0) {
+        x = x FS y FS "&bsol;n"
+    }
+    return x
+}
+
+BEGIN {
+    r_head = ReadFile("../../resources/stdhead.html")
+}
+
+{
+gsub(/&lt;!-- HEAD --&gt;/, r_head)
+print
+}
+</pre>
+<p>You run it from the shell with <pre>awk -f script.awk file_to_compile.html &gt; compiled_file.html</pre></p>
+<p>This will replace the HEAD token with whatever is in resources/stdhead.html. Making it work exactly the same as</p>
+<pre>
+&lt;?php include("../../resources/stdhead.html"); ?&gt;
+</pre>
+<p>It works, I get to run away from the burning dumpster that PHP is and the hosting is free. Pretty neat.</p>
+<footer>by <strong><a href="https://f00f.me/">cmp</a></strong></footer>
+</div>
+</body>
+</html>
