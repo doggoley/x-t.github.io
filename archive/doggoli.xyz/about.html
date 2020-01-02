@@ -60,15 +60,6 @@ a {
 </style>
 </head>
 <body>
-<?php
-// This is for analytics or something.
-$utime = strval(time());
-file_put_contents("/home/www-data/doggoli-visitors.log", "[{$utime}]IP {$_SERVER['REMOTE_ADDR']} viewed the contact page.\n", FILE_APPEND);
-
-// beta testing - new analytics engine
-include('/home/www-data/analytics.php');
-
-?>
 
     <div id="cdiv">
     
