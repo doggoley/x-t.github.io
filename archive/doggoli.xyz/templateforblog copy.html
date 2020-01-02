@@ -1,0 +1,142 @@
+<html>
+	<head>
+
+		<title>Doggoli</title>
+   	 	<meta name="description" content="Hi, i'm Doggoli.">
+		<style>
+
+			
+		.blogtitle {
+
+    	text-align: center;
+    	font-size: 20px;
+  		font-style: italic;
+    	font-family: Courier New;
+    	color: #ea650b;
+    	
+}
+
+		body {
+
+   		font-family: monospace;
+    	background-color: #414a4c;
+
+}
+	
+		.textdiv {
+
+		text-align: center;
+    	font-size: 15px;
+  		font-style: italic;
+    	font-family: Courier New;
+   	 	color: #ea650b;
+
+
+
+}
+
+	
+
+		.titlediv {
+
+		text-align: center;
+		color: #ea650b;
+		font-size: 48px;
+		font-family: Courier New;
+
+
+}
+
+		@font-face {
+    	font-family: Helvetica Neue;
+   		src: url(fuckingfont.ttf);
+
+}
+
+
+	
+		.nigger {
+
+		position: fixed;
+		font-size: 14px;
+		left:0;
+	    bottom: 0;
+	    width: 100%;
+	    text-align: center;
+	    color: #ea650b;
+	    font-family: Helvetica Neue;
+
+}
+
+		.button {
+
+		background-color: #ff7700;
+		border: none;
+		color: #000000;
+		padding: 15px 15px;
+		text-align: center;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-family: monospace;
+		font-size: 16px;
+
+}
+
+		.buttoncunt {
+
+			text-align: center;
+
+
+		}
+
+
+
+		</style>	
+	</head>
+
+<?php
+// This is for analytics or something.
+$utime = strval(time());
+file_put_contents("/home/www-data/doggoli-visitors.log", "[{$utime}]IP {$_SERVER['REMOTE_ADDR']} viewed the radio page.\n", FILE_APPEND);
+
+// beta testing - new analytics engine
+include('/home/www-data/analytics.php');
+
+?>
+
+
+
+	<body>
+
+		<div class="titlediv">
+		<p>Radio</p>
+		</div>
+			
+		<div class="blogtitle">
+		<p>Pretty much just a radio that broadcasts my entire music library, shuffled.</p> 
+		</div>
+
+		<div class="textdiv">
+		It wont broadcast every day, nor is there a schedule for when the broadcast starts (im too busy for that shit).	
+		</div>
+
+		<div class="blogtitle">
+		<p>Enjoy the shity music and if you are an artist that is against me playing your music on this station, contact me at: idontgiveashit@fuckoff.com</p>
+		</div>
+
+		<audio controls=""><source src="http://s2.free-shoutcast.com:18366/;?type=http&amp;nocache=20"></audio>
+
+		<div class="nigger">
+
+   		 <p>(C) 2018 Doggoli. If you copy it i will be mad, but, buy me a coke and we're cool.</p>
+			
+   		
+   		</div>        
+
+
+
+
+	</body>
+
+
+</html>

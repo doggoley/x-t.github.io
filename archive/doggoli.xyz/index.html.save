@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Doggoli</title>
+    <meta name="description" content="Hi, i'm Doggoli.">
+<style>
+#cdiv {
+    text-align: center;
+}
+
+#rdiv {
+    text-align: left;
+    display: inline-block;
+}
+
+body {
+    font-family: cou;
+    color: #ea650b;
+    background-color: #414a4c;
+}
+
+a {
+    color: #ea650b;
+}
+</style>
+</head>
+<body>
+    <div id="cdiv">
+    <h1>Doggoli</h1>
+    <div id="rdiv">
+        <p>Hello, i do nothing, and i tottaly didnt steal this site design</p>
+    <ul>    
+        <p><strong>My useless projects</strong></p>
+	   <li>Radio Station -  <a href="Radio.html">Doggoli's Radio</a></li>
+        <p><strong>contact me (please don't)</strong></p>
+    </ul>
+        
+    <ul>
+        <li>irc  - Doggoli @ <a href="http://rizon.net">irc.rizon.net</a></li>
+	    <li>tumblr - <a href="https://doggoli.tumblr.com">doggoli.tumblr.com</a></li>
+        <li>twitter - <a href="http://twitter.com/doggoli">@Doggoli</a></li>
+        
+        
+           
+    </ul>
+    <br>
+    </div>
+    </div>
+</body>
+</html>

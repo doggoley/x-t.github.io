@@ -1,0 +1,150 @@
+<html>
+<head>
+    <title>Doggoli</title>
+    <meta name="description" content="Hi, i'm Doggoli.">
+<style>
+#cdiv {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+}
+
+body {
+    font-family: monospace;
+    color: #ea650b;
+    background-color: #414a4c;
+    text-align: center;
+
+}
+
+.copyright {
+    position: fixed;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+a {
+    color: #ea650b;
+}
+
+.button {
+
+	background-color: #ff7700;
+	border: none;
+	float: left;
+	color: #000000;
+	padding: 15px 15px;
+	text-align: center;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: monospace;
+
+}
+
+	.button1 {font-size: 16px;}
+	.button2 {font-size: 16px;}
+	.button3 {font-size: 11.5px;}
+    .button4 {font-size: 16px; width: 256px; font-family: courier new; font-style: italic;}
+
+
+    .terry {
+
+            font-size: 15px;
+
+
+    }
+
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+ .divlol {
+
+
+
+ }
+
+li a {
+    display: block;
+    color: ea650b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+
+li a:hover {
+    background-color: #111;
+}
+
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(fuckingfont.ttf);
+}
+    
+
+</style>
+</head>
+<body>
+<?php
+// This is for analytics or something.
+$utime = strval(time());
+file_put_contents("/home/www-data/doggoli-visitors.log", "[{$utime}]IP {$_SERVER['REMOTE_ADDR']} viewed the homepage.\n", FILE_APPEND);
+
+// beta testing - new analytics engine
+include('/home/www-data/analytics.php');
+
+?>
+
+    <div id="cdiv">
+    </div>
+
+
+    <ul>
+        
+        <li><a href="contact.php">Contact me.</a></li>
+        <li><a href="about.php">About me.</a></li>
+        <li><a href="radio.php">Radio</a></li>
+        <li style=" float: right; font-style: italic; color: white; padding-right: 15px; font-family: Courier New; font-size: 14px; font-style: bold;"><p>Hi, i'm Doggoli.</p></li>
+
+
+    </ul>
+
+
+
+
+    <div class="cdiv">
+    
+    </div>
+
+    <div class="copyright">
+
+    	<p>(C) 2018 Doggoli. If you copy it i will be mad, but, buy me a coke and we're cool.
+        <a href="https://f00f.xyz/privacy/policy.php">Privacy or smth.</a></p>
+
+    </div> 	
+
+    <div class="terry">
+       <p>R.I.P Terrance Andrew Davis 1969 - 2018</p> 
+    </div>
+</body>
+</html>

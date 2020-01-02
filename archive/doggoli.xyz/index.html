@@ -1,0 +1,212 @@
+<html>
+<head>
+    <title>Doggoli</title>
+    <meta name="description" content="Hi, i'm Doggoli.">
+<style>
+#cdiv {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+}
+
+body {
+    font-family: monospace;
+    color: #ea650b;
+    background-color: #414a4c;
+    text-align: center;
+
+}
+
+.copyright {
+    position: relative;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+a {
+    color: #ea650b;
+}
+
+.button {
+
+	background-color: #ff7700;
+	border: none;
+	float: left;
+	color: #000000;
+	padding: 15px 15px;
+	text-align: center;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-family: monospace;
+
+}
+
+	.button1 {font-size: 16px;}
+	.button2 {font-size: 16px;}
+	.button3 {font-size: 11.5px;}
+    .button4 {font-size: 16px; width: 256px; font-family: courier new; font-style: italic;}
+
+
+    .terry {
+
+            font-size: 15px;
+
+
+    }
+
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+
+ .divlol {
+
+
+
+ }
+
+li a {
+    display: block;
+    color: ea650b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+
+li a:hover {
+    background-color: #111;
+}
+
+
+@font-face {
+    font-family: Helvetica Neue;
+    src: url(fuckingfont.ttf);
+}
+
+
+@font-face {
+    font-family: Courier New;
+    src: url(courier.ttf);
+}
+
+.timer {
+
+    font-style: italic;
+    font-size: 34px;
+    font-family: Helvetica Neue;
+
+}
+
+.giveusmoneysowecankeepitrunninglol {
+
+    font-size: 14px;
+    font-style: italic;
+    font-family: Courier New;
+
+}
+    
+
+</style>
+</head>
+<body>
+
+    <div id="cdiv">
+    </div>
+
+
+    <ul>
+        
+        <li><a href="contact.html">Contact me.</a></li>
+        <li><a href="about.html">About me.</a></li>
+        <li><a href="radio.html">Radio</a></li>
+        <li style=" float: right; font-style: italic; color: white; padding-right: 15px; font-family: Courier New; font-size: 14px; font-style: bold;"><p>Hi, i'm Doggoli.</p></li>
+
+
+    </ul>
+
+
+<div class="timer">
+
+    <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 14, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</div>
+
+<div class="giveusmoneysowecankeepitrunninglol">
+
+<p style="font-size: 20px;"> Hosting this shit isn't free you know.</p>
+
+<br>
+
+<p style="text-align: justify-all;">f00f has been a great super secret club on the information superhighway, but github didn't give my friend more digitalocean credit (lmao). So its time for us to part with it. That countdown timer up top is showing the aproximate time that f00f is going down, so it isn't the most accurate, but the cutoff time is somewhere around that time. If you actually somehow managed to visit and enjoy this super secret club you can donate your worthless money to keep it running on <a href="https://f00f.me">f00f.me</a>. And if you somehow still want to stay in touch with me you can go to <a href="http://doggoli.tk">doggoli.tk</a> to catch up with my bullshit there if you want! We've come a long way (at least i did, he was already fucking smart), and this has been one of the best experiences of my life. </p>
+
+<br>
+
+<img src="cat.jpg" height="422" width="581">
+
+<p style="font-size: 40px;">Thanks for being with us, it was fun!</p>
+
+</div>
+
+
+    <div class="cdiv">
+    
+    </div>
+
+    <div class="copyright">
+
+    	<p>(C) 2018 Doggoli. If you copy it i will be mad, but, buy me a coke and we're cool.
+        <a href="https://zxyz.best/archive/f00f.xyz-old/privacy/policy.html">Privacy or smth.</a></p>
+
+    </div> 	
+</body>
+</html>

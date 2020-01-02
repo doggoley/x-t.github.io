@@ -1,0 +1,4 @@
+git add .
+git commit -m "${1}"
+git push
+ssh doggoli@f00f.me "cd /var/www/doggoli.xyz; git pull"
