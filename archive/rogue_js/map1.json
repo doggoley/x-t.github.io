@@ -1,0 +1,35 @@
+{
+	"level": 1,
+	"levelName": "Test",
+	"actions": {
+		"1": {
+			"onWalk": ["message", "delete"],
+			"messageContent": "Which way will it be?"
+		},
+		"2": {
+			"onSight": ["message", "delete"],
+			"messageContent": "It's a dead end!"
+		},
+		"D": {
+			"onSight": ["message"],
+			"messageContent": "This door requires a key!"
+		},
+		"K": {
+			"onSight": ["pickup"],
+			"pickupName": "key"
+		}
+	},
+	"requirements": {
+		"D": {
+			"check": "onSight",
+			"inInventory": "key",
+			"onFailure": {
+				"onWalk": ["immovable"]
+			},
+			"onSuccess": {
+				"onSight": ["delete", "message"],
+				"messageContent": "The door opens."
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+2020/03/20 - Engine writeup for rogue.js test
+
+The engine is extremely simple and works on a loop based on user input.
+
+1. Preparation
+1.1. Initial variables
+
+1.1.1. constructedMap = A 2D array (32x32) holding the real map data, character by character.
+
+[
+	[{"char":"X"}, {"char":"X"}, {"char":"X"}...x32],
+	[{"char":"X"}, {"char":"X"}, {"char":"X"}...x32],
+	...x32
+]
+
+1.1.2. revealedMap = A 2D array (32x32) holding the revealed map data (as what appeared for the player in a 3x3 space around them - the character matrix)
+
+[
+	[{"char":" "}, {"char":"X"}, {"char":"X"}...x32],
+	[{"char":" "}, {"char":"X"}, {"char":"X"}...x32],
+	...x32
+]
+
+1.1.3. characterMatrix = A 2D array (3x3) holding the character surroundings, later saved into the revealedMap
+
+[
+	[{}, {}, {}],
+	[{}, {}, {}],
+	[{}, {}, {}]
+]
+
+Matrix in relation to character position
+-1,-1	-1,0	-1,+1
+0,-1	0,0		0,+1
++1,-1	+1,0	+1,+1
+
+Matrix coordinates
+0,0		0,1		0,2
+1,0		1,1		1,2
+2,0		2,1		2,2
+
+Character is always at 1,1
+
+1.1.4. characterCoords = An array holding character's X and Y coordinates
+
+[1, 2]
+
+1.1.5. spawnpointCoords = An array holding the spawnpoint coordinates (marked with S on the map)
+
+[1, 2]
+
+1.1.6. characterMap = An object holding all character's actions
+
+{
+	"D": {
+		"onMove": ["delete"]
+	}
+}
+
+Action logic:
+(str) character:
+ (str) [onWalk, onSight]: (arr) actions [message, delete, pickup, immovable]
+ (str) messageContent: (str) message content
+ (str) pickupName: (str) pickup name
+
+Actions:
+message - (onSight, onWalk): shows a message from messageContent in parent
+delete - (onSight, onWalk): deletes all character objects
+pickup - (onWalk): picks up character into inventory with pickupName in parent
+immovable - (onWalk): does not let player past character
+
+1.1.7. characterInventory = An array holding the things the player picked up, character action is "pickup"
+
+["key"]
+
+1.1.9. currentMapFile = A string of the map file
+1.1.10. currentMapActions = The JSON for the map's character actions. Turned into characterMap afterwards. Parsed from map${lvl}.json
+
+Level logic:
+level: (int) level number
+levelName: (str) level name
+actions: (obj) actions per each non-reserved character
+	  (str) character: (obj) action
+requirements: (obj)
+ (str) character: 
+  (obj) check: (str) time,
+  (obj) the requirement that has to be met to run onSuccess [inInventory: (str) an item inside the inventory]
+  (obj) onFailure: (obj) action
+  (obj) onSuccess: (obj) action
+
+1.1.11. freeToMove = On false, ignores keypresses. Set to true 75ms after a keypress.
+1.1.12. messageCount = Counter for messages on the right side of the view
+1.1.13. keyTimeout = Timeout, which sets freeToMove to true every 75ms
+
+2. Functions
+
+2.1. createArray(len, ...) - Creates an empty array. Vararg for several dimensions.
+
+createArray(3, 3) // characterMatrix
+
+2.2. generateEmptyMapMatrix(x, y) - Generates an empty map matrix (x by y), every element is {"char": " "}
+
+generateEmptyMapMatrix(32, 32) // constructedMap, revealedMap
+
+2.3. generateCharacterMap(mapFile) - Generates a character map from mapN.txt and mapN.json
+
+generateCharacterMap(currentMapFile) // characterMap
+
+2.4. updateRevealedMap() - Updates the revealed map every time the player moves (adds the character matrix)
+2.5. generateCharacterMatrix() - Generates the 3x3 character matrix from the real map
+2.6. generateMapMatrix() - Generates the real map matrix (32x32)
+2.7. deleteBlock(block) - Deletes a character (block) from the real map
+2.8. moveChar(direction) - Moves the character (@) in 4 cardinal directions
+2.9. updateWindow() - Updates the game window every character move or level change
+2.10. sendMessage(msg) - Sends a message to the right side of the game view
+2.11. throwError(err) - Throws out an error in case the engine finds something bad
+2.12. loadNextLevel(lvl) - Loads next level (lvl)
+2.13. levelFinish(lvl) - Called upon the character reaching the "F" block
+2.14. document.body.onkeydown - Moves the character with arrow keys, caps the speed at 1move/75ms
+
+3. Architecture
+
+3.1 Setup -> 3.2 onkeydown -> 3.3 moveChar -> 3.4 Finish
+
+3.1. Initial values are set, initiating the map/character map/character matrix.
+3.2. onkeydown 3.3 is called
+3.3.
+
+moveChar -> 3.5 block -> 3.6 requirement checks -> 3.7 onSight checks -> 3.8 onWalk checks -> 3.9 actionQueue -> Update window and return
+
+3.4. Finishes the game if no levels are left, otherwise loads the next level
+3.5. Checks if a block is immovable in front, if it is, the player will not be let through
+3.6. Checks if a character in sight (inside the 3x3 player matrix) has requirements, they are checked and executed.
+3.7. onSight means anything inside the 3x3 player matrix.
+3.8. onWalk means that the character (@) has walked on top of it
+3.9. onSight and onWalk actions are put into the actionQueue and executed later on
+3.10.
+
+#####
+#X @ 
+#####
+The X is not onSight or onWalk
+
+<- 1 move left
+#####
+#X@  
+#####
+The X is onSight
+
+<- 1 move left
+#####
+#@   
+#####
+The X is onWalk
+
+^ 1 move up
+#####
+#@
+#####
+# is a reserved character for wall, which is immovable, therefore, the player doesn't move
+
+-> N moves right
+
+######
+   @K#
+######
+The K key was written as this in map1.json:
+		"K": {
+			"onSight": ["pickup"],
+			"pickupName": "key"
+		}
+As it is onSight, it will be picked up
+
+4. Map file
+
+The map file can have any character, however, these are reserved:
+S: spawnpoint
+F: level completion
+#: wall
+ : space
+@: player
+OUT_OF_BOUNDS: internal character meaning a block in the matrix is out of bounds (32x32 map)
+
+5. Characters file
+
+It's written in JSON, check the examples provided in the project.

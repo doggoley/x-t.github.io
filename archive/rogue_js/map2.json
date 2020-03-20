@@ -1,0 +1,47 @@
+{
+	"level": 2,
+	"levelName": "Test 2",
+	"actions": {
+		"1": {
+			"onWalk": ["message"],
+			"messageContent": "Which way will it be?"
+		},
+		"2": {
+			"onSight": ["message"],
+			"messageContent": "It's a dead end!"
+		},
+		"3": {
+			"onSight": ["message"],
+			"messageContent": "I can feel it, it's somewhere around here!"
+		},
+		"4": {
+			"onSight": ["message"],
+			"messageContent": "Sorry, there's nothing back here"
+		},
+		"5": {
+			"onSight": ["message"],
+			"messageContent": "This isn't funny anymore."
+		},
+		"D": {
+			"onSight": ["message"],
+			"messageContent": "This door requires a key!"
+		},
+		"K": {
+			"onSight": ["pickup"],
+			"pickupName": "key"
+		}
+	},
+	"requirements": {
+		"D": {
+			"check": "onSight",
+			"inInventory": "key",
+			"onFailure": {
+				"onWalk": ["immovable"]
+			},
+			"onSuccess": {
+				"onSight": ["delete", "message"],
+				"messageContent": "The door opens."
+			}
+		}
+	}
+}
