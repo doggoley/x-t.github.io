@@ -95,6 +95,24 @@ a {
 	animation: content 0.55s ease-out;
 }
 
+.button {
+	display: inline-block;
+	background-color: #302f2f;
+	border-radius: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-width: 250px;
+	color: white;
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.button:hover {
+	animation: button 0.2s ease-in;
+	background-color: #e6e1e1;
+	color: black;
+}
+
 @keyframes content {
 	0% {
 		transform: translateY(5%);
@@ -116,6 +134,22 @@ a {
 	100% {
 		height: 128px;
 		width: 128px;
+	}
+}
+
+@keyframes button {
+	0% {
+		background-color: #302f2f;
+		color: white;
+	}
+
+	50% {
+		color: black;
+	}
+
+	100% {
+		background-color: #e6e1e1;
+		color: black;
 	}
 }
 
