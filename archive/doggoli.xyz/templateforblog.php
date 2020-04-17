@@ -49,7 +49,7 @@
 
 
 	
-		.nigger {
+		.footer {
 
 		font-size: 14px;
 		left:0;
@@ -111,7 +111,7 @@ include('/home/www-data/analytics.php');
 
 
 
-		<div class="nigger">
+		<div class="footer">
 
    		 <p>(C) 2018 Doggoli. If you copy it i will be mad, but, buy me a coke and we're cool.</p>
 			

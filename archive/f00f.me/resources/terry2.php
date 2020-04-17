@@ -1,1 +1,1 @@
-<a href="/resources/cianigger.gif"><img src="/resources/cianigger.gif"></a>
+<a href="/resources/cia.gif"><img src="/resources/cia.gif"></a>

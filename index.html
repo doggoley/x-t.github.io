@@ -9,13 +9,12 @@
 						 Last episode with Jeremy (C) Top Gear
 						 Elon Musk smoking kush (C) Elon Musk, Joe Rogan
 						 James May is my own work, Public Domain
+						 Snow Leopard Server background (C) Apple
 	My profile picture - The Clash's London Calling (C) The Clash, CBS, Epic
 	Icons - Font Awesome (C) https://fontawesome.com
 	Logos - Logos for Telegram, GitHub and GitLab all are property of their respective owners.
 
-	If you're not mentioned, it was insignifant enough to the site that I didn't care.
-	If you do want a spot inside the comment, shoot me an e-mail. If you want it on the site itself, write it on
-	a letter and shove it up your ass.
+	If you have any problem with any of these, email me - cmp@airmail.cc
 -->
 
 <head prefix="og: http://ogp.me/ns#">
@@ -36,26 +35,9 @@
 	<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="main.css" rel="stylesheet" type="text/css" media="all">
+	<link id="fontawesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
 </head>
 <body>
-<!--
-
-	Two weeks after the one year anniversary of his death, this mesage
-	was displayed on a seperate landing page.
-	https://zxyz.best/archive/terry-landing-page/index_terry_landing.html
-
-	<div class="ripTerry">
-		<h1>RIP Terry A. Davis</h1>
-		<p>August 11th marks the 1 year of his passing.</p>
-		<p>It is a shame such a man had to die, he was an idol to me. I feel like many people can learn a lot from him. His demise, his work.</p>
-		<p>It takes a lot of dedication, patience and intellect to create a fully fledged OS single handedly over 10 years.</p>
-		<p>And although I may have 1/20th of these, he still made me strive for these values.</p>
-		<p>Light a candle in his honor.</p>
-		<p>I am also reopening a small archive of Terry's stuff I have collected. <a href="terry/index.html">Check it here.</a></p>
-		<img src="terry.jpeg">
-	</div>
--->
-
 <div id="bg"></div>
 <div class="main c">
 	<div style="display:none;"><h1>Without CSS, many sites end up looking horrible. Use an up-to-date browser.</h1></div>
@@ -104,7 +86,7 @@
 		</div>
 	<p>My most complex project was <u><a href="https://github.com/x-t/okforms">okforms</a></u>. It's a no-bullshit forms/polls creator and viewer, written in pure PHP from scratch.</p>
 	<p>The piece of shit that made me the most headaches was <u><a href="https://github.com/x-t/ebin-dos">ebin-dos</a></u>. Mainly a hello world from an x86 bootloader.</p>
-	<p>I contributed a bit to hackintoshing, see the ThinkPad X220 EFI folder <u><a href="https://github.com/x-t/x220-lion-efi">here (Lion)</a></u>, <u><a href="https://github.com/x-t/x220-mojave-efi">here (Mojave)</a></u> or <u><a href="https://github.com/x-t/x220-catalina-efi">here (Catalina)</a></u>.</p>
+	<p>I contributed a bit to hackintoshing, I made EFI folders for the ThinkPad X220 to work with Lion, Mojave and Catalina. Find them in my Github or project archive.</p>
 	<p>This website's repo itself is private, you can copy its code from view-source, I don't care.</p>
 	<p>My developement expertise is mostly web-related work. I don't really use back-ends anymore and just focus on the front-end now, as I cannot be bothered to run a server to host a back-end.</p>
 	<p>Nowadays, if I want to make something I'll just bodge something together using JS, as I cannot be bothered to maintain proper codebases.</p>
@@ -127,21 +109,21 @@
 </div><!-- main -->
 <script>
 // Randomized background
-var b = "back";
+var b="back_",p=".png",j1=".jpg",j2=".jpeg";
 var bgs = [
-	b+".png",
-	b+"_purple.png",
-	b+"_red.png",
-	b+"_xp.jpg",
-	b+"_car.jpg",
-	b+"_old.jpg",
-	b+"_may.png",
-	b+"_elon.jpg"
+	b+"blue"+p,
+	b+"purple"+p,
+	b+"red"+p,
+	b+"xp"+j1,
+	b+"car"+j1,
+	b+"old"+j1,
+	b+"may"+p,
+	b+"elon"+j1,
+	b+"sl_server"+j2
 ];
 var r = Math.floor(Math.random() * bgs.length);
 var bg = document.getElementById("bg");
 bg.style.backgroundImage = "url('" + "bgs/" + bgs[r] + "')";
 </script>
-<script src="https://kit.fontawesome.com/4dbc987eda.js"></script>
 </body>
 </html>
