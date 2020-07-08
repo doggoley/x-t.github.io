@@ -98,7 +98,7 @@ a {
 .button {
 	display: inline-block;
 	background-color: #302f2f;
-	border-radius: 5%;
+	border-radius: 12px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-width: 250px;
@@ -111,6 +111,98 @@ a {
 	animation: button 0.2s ease-in;
 	background-color: #e6e1e1;
 	color: black;
+}
+
+/* Box spacing */
+.projectBox {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: darkslategray;
+    height: 250px;
+    justify-content: center;
+    width: 100%;
+    max-width: 835px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.projectBox_left {
+    width: 200px;
+}
+
+.projectBox_center {
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.projectBox_right {
+    align-self:stretch;
+    display:flex;
+    align-items: center;
+}
+
+/* Box left side */
+.projectBox_title {
+    font-size: 200%;
+}
+
+.projectBox_subtitle {
+    font-size: 80%;
+}
+
+.projectBox_src {
+    margin-top: 60px;
+    font-size: 125%;
+}
+
+/* Box center */
+/*.projectBox_description {}*/
+
+/* Box right side */
+.projectBox_button {
+    background-color:lightskyblue;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: table;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.projectBox_button:hover {
+    animation: cardButton 0.2s ease-in;
+    background-color: #2158b0;
+    cursor: pointer;
+}
+
+.redBtn {
+    background-color:#bf3952;
+}
+
+.redBtn:hover {
+    animation: cardButton_red 0.2s ease-in;
+    background-color: #85152a;
+    cursor: pointer;
+}
+
+.projectBox_buttonChild {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 200%;
+}
+
+.projectBox_disclaimer {
+    color: lightcoral;
+}
+
+.projectBox_rightMobile {
+    display: none;
+}
+
+.srcDl:hover {
+    filter: drop-shadow(0px 0px 4px white);
 }
 
 @keyframes content {
@@ -137,6 +229,26 @@ a {
 	}
 }
 
+@keyframes cardButton_red {
+	0% {
+		background-color: #bf3952;
+	}
+
+	100% {
+		background-color: #85152a;
+	}
+}
+
+@keyframes cardButton {
+	0% {
+		background-color: lightskyblue;
+	}
+
+	100% {
+		background-color: #2158b0;
+	}
+}
+
 @keyframes button {
 	0% {
 		background-color: #302f2f;
@@ -153,10 +265,100 @@ a {
 	}
 }
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 600px) {
+    /* Mobile version */
 	.border {
 		text-align: left;
 		display: inline-block;
 		max-width: 90%;
-	}
+    }
+
+    .button {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .button {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Box spacing */
+    .projectBox {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        background-color: darkslategray;
+        min-height: 450px;
+        justify-content: center;
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+    }
+    .projectBox_left {
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        margin-bottom: 10px;
+        top: 0;
+    }
+
+    .projectBox_center {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .projectBox_right {
+        align-self:stretch;
+        display:flex;
+        align-items: center;
+        display: none;
+    }
+
+    /* Box left side */
+    .projectBox_title {
+        font-size: 200%;
+    }
+    /*.projectBox_subtitle {}*/
+    .projectBox_src {
+        margin-top: 20px;
+    }
+
+    /* Box center */
+    /*.projectBox_description {}*/
+
+    /* Box right side */
+    .projectBox_button {
+        width: 100%;
+        height: 70px;
+        border-radius: 0;
+        display: table;;
+    }
+    .projectBox_buttonChild {
+        font-size: 200%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .projectBox_disclaimer {
+        color: lightcoral;
+        padding-left: 10px;
+    }
+
+    .projectBox_rightMobile {
+        display: inline-block;
+        min-height: 50px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .redBtn {
+        background-color:#bf3952;
+    }
 }

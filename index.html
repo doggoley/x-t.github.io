@@ -21,37 +21,39 @@
 	<meta charset="UTF-8">
 	<meta content="object" property="og:type"> 
 	<meta content="zxyz.best" property="og:site_name"> 
-	<title>zxyz best</title>
-	<meta name="twitter:title" content="zxyz.best">
-	<meta name="og:title" content="zxyz.best">
+	<title>zxyz</title>
+	<meta name="twitter:title" content="zxyz">
+	<meta name="og:title" content="zxyz">
 	<meta name="description" content="Personal website about zxyz">
 	<meta name="twitter:description" content="Personal website about zxyz">
 	<meta name="og:description" content="Personal website about zxyz">
 	<meta content="64" property="og:image:width">
 	<meta content="64" property="og:image:height">
-	<meta name="og:image" content="https://zxyz.best/favicon.jpg">
-	<meta name="twitter:image" content="https://zxyz.best/favicon.jpg">
+	<meta name="og:image" content="https://x-t.github.io/favicon.jpg">
+	<meta name="twitter:image" content="https://x-t.github.io/favicon.jpg">
 	<meta content="summary" property="twitter:card">
 	<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="main.css" rel="stylesheet" type="text/css" media="all">
-	<link id="fontawesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+	<link href="main.min.css" rel="stylesheet" type="text/css" media="all">
+	<link id="fontawesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" crossorigin="anonymous" />
 </head>
 <body>
 <div id="bg"></div>
+<div id="snow"></div>
 <div class="main c">
 	<div style="display:none;"><h1>Without CSS, many sites end up looking horrible. Use an up-to-date browser.</h1></div>
-	<noscript><h1>Enable JavaScript for optimal viewing.</h1></noscript>
-	<p class="c"><img class="favico" src="favicon.jpg" width="128" height="128" alt="Profile picture" title="The Clash - London Calling, best album art of all time. If you disagree, hey /mu/, die!"></p>
+	<noscript><h1>Enable JavaScript for optimal viewing. It will give you cool randomized backgrounds!</h1></noscript>
+	<p class="c"><img class="favico" src="favicon.jpg" width="128" height="128" alt="Profile picture" title="The Clash - London Calling"></p>
 <div class="border">
 <div class="content">
 	<h1 class="c">zxyz</h1>
+	<div id="eventSpace"></div>
 	<br>
 	<h2 class="c">About</h2>
+    <div class="c">
 	<p>I'm a 17 y/o high school student from Lithuania.</p>
-	<p>I <em>used to be</em> a developer/sysadmin. Sometimes I do fire up a text editor and update my site or work on a project, however those days have become more and more far in-between.</p>
-	<p>I made this website because I thought that it would be fun to maintain a page about myself. It's a lot more revealing than a social media profile, why don't you try it?</p>
-	<p>My main interests are technology, music and just livin'. I'm a big music man, if I'm not listening to something right now, my mind is already humming something from memory. I don't play any instruments, and I don't really have any favorite genres.</p>
+	<p>I am a sysadmin/developer. Although I'm not actively working on projects, it is a field I'm passionate for.</p>
+    </div>
 	<br>
 	<h2 class="c">Contact</h2>
 	<div class="c contactList">
@@ -62,30 +64,18 @@
 		</a>
 	</div>
 	<div class="c">
-		<p>E-mail is always preferred.</p>
-		<p>I am on many more platforms, but if it's not here, it's very likely I'll never respond.</p>
+		<p>Most likely, I will not respond. Especially if you're trying to stalk me, directly or through friends.</p>
 	</div>
 	<br>
 	<h2 class="c">Work</h2>
-		<div class="c contactList">
-		<a href="https://github.com/x-t">
+	<div class="c contactList">
+		<a href="archive/index.html">
 			<div class="button">
-			<i class="fab fa-github"></i> Github
+			<i class="fas fa-tasks"></i> Projects
 			</div>
 		</a>
-		<a href="https://gitlab.com/f00f">
-			<div class="button">
-			<i class="fab fa-gitlab"></i> Gitlab
-			</div>
-		</a>
-		</div>
-	<p>My most complex project was <u><a href="https://github.com/x-t/okforms">okforms</a></u>. It's a no-bullshit forms/polls creator and viewer, written in pure PHP from scratch.</p>
-	<p>The piece of shit that made me the most headaches was <u><a href="https://github.com/x-t/ebin-dos">ebin-dos</a></u>. Mainly a hello world from an x86 bootloader.</p>
-	<p>I contributed a bit to hackintoshing, I made EFI folders for the ThinkPad X220 to work with Lion, Mojave and Catalina. Find them in my Github or project archive.</p>
-	<p>This website's repo itself is private, you can copy its code from view-source, I don't care.</p>
-	<p>My developement expertise is mostly web-related work. I don't really use back-ends anymore and just focus on the front-end now, as I cannot be bothered to run a server to host a back-end.</p>
-	<p>Nowadays, if I want to make something I'll just bodge something together using JS, as I cannot be bothered to maintain proper codebases.</p>
-	<p>Other than programming, I can do some system administration. I ran a fair share of Linux servers, from a homelab (which I still run to this day), to a VPS to host game servers and websites, as well as <u><a href="https://github.com/x-t/xyzanalytics">analytics (PHP)</a></u> data for me and a friend.</p>
+	</div>
+    <br>
 	<h2 class="c">Other</h2>
 	<div class="c contactList">
 		<a href="terry/gallery.html">
@@ -93,32 +83,11 @@
 			<i class="fas fa-archive"></i> Terry A. Davis archive
 			</div>
 		</a>
-			<a href="archive/index.html">
-			<div class="button">
-			<i class="fas fa-tasks"></i> Project archive
-			</div>
-		</a>
 	</div>
 </div><!-- content -->
 </div><!-- border -->
 </div><!-- main -->
-<script>
-// Randomized background
-var b="back_",p=".png",j1=".jpg",j2=".jpeg";
-var bgs = [
-	b+"blue"+p,
-	b+"purple"+p,
-	b+"red"+p,
-	b+"xp"+j1,
-	b+"car"+j1,
-	b+"old"+j1,
-	b+"may"+p,
-	b+"elon"+j1,
-	b+"sl_server"+j2
-];
-var r = Math.floor(Math.random() * bgs.length);
-var bg = document.getElementById("bg");
-bg.style.backgroundImage = "url('" + "bgs/" + bgs[r] + "')";
-</script>
+<script src="main.min.js"></script>
+<script src="snow.min.js"></script>
 </body>
 </html>

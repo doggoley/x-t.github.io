@@ -1,4 +1,4 @@
-# [zxyz.best](https://zxyz.best)
+# [zxyz.best](https://x-t.github.io)
 ## Generation 4 of the personal website
 
 Probably the most simple, yet best generation of the site yet. Although quite possibly, the last.

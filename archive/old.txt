@@ -1,0 +1,119 @@
+<!--
+    <table style="width:100%">
+	  <tr>
+	    <th>Project name (click for live preview, if available)</th>
+	    <th>Source code</th>
+	    <th>Description</th>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./f00f.me-wayback/index.html">f00f.me</a></u> (Wayback Machine backup)</td>
+	    <td>-</td>
+	    <td>A super old version of the site. Archived on 2018/04/19</td>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./f00f.xyz-old/index.html">f00f.xyz</a></u> (HTML remaster)</td>
+	    <td><u><a href="https://drive.google.com/open?id=1n2fQgyXz1_cBzXEVaTc-bI52tFQRGHdW">Google Drive</a></u></td>
+	    <td>Page dedicated to projects hosted on now-defunct f00f.xyz. Used until Oct 1, 2018.</td>
+	  </tr>
+	  <tr>
+        <td><u><a href="./f00f.me-wayback2/index.html">f00f.me</a></u> (Wayback Machine backup) <i style="color:LightCoral;">Incomplete</i></td>
+	    <td>-</td>
+	    <td>Archived on 2018/09/04</td>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./f00f.me/index.html">f00f.me</a></u> (HTML remaster)</td>
+	    <td><u><a href="https://drive.google.com/open?id=1O-MVJW0GrAkNg0acQB3OibyJxFKwHM0Z">Google Drive</a></u></td>
+	    <td>An even older version of my site. When I had to stop hosting f00f.xyz. Used until Oct 1, 2018.</td>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./f00f.xyz/index.html">f00f.xyz</a></u> (fixed for out-of-root use)</td>
+	    <td><u><a href="https://drive.google.com/open?id=1MSo1dMcXAiIpKL0uns7dn9WT92D-f7-M">Google Drive</a></u></td>
+	    <td>Old version of my site. Used until Apr 20, 2019.</td>
+	  </tr>
+	</table>
+-->
+
+<!--
+	<table style="width:100%">
+	  <tr>
+	    <th>Project name (click for live preview, if available)</th>
+	    <th>Source code</th>
+	    <th>Description</th>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./numgame/index.html">numgame</a></u></td>
+	    <td><u><a href="https://drive.google.com/open?id=1amnmjHsIaQB64Rov3o00Fa7N4e1YL2I4">Google Drive</a></u></td>
+	    <td>Old/new versions of a dumb number game.</td>
+	  </tr>
+	  <tr>
+	    <td>terminator fork (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/terminator">GitHub</a></u></td>
+	    <td>Fork of the terminator terminal for Linux, adding middle-click to close tabs.</td>
+	  </tr>
+	  <tr>
+	    <td>xyzanalytics (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/xyzanalytics">GitHub</a></u></td>
+	    <td>Small PHP analytics script that keeps your site visitors. There is a way more advanced private version, but it's highly specialized so I'm not releasing it.</td>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./doggoli.xyz/index.html">doggoli.xyz</a></u> (HTML remaster)</td>
+	    <td><u><a href="https://drive.google.com/open?id=1G76h8PE1Bf0eQOSaAo8AI34qyhcxSio4">Google Drive</a></u></td>
+	    <td>A website my friend made and I hosted. Remastered in PHP.</td>
+	  </tr>
+	  <tr>
+	    <td><u><a href="./terry-landing-page/index.html">Terry A. Davis memorial landing page</a></u></td>
+	    <td>Use view-source</td>
+	    <td>Two weeks after the one year anniversary of his death, this message was displayed on a seperate landing page</td>
+	  </tr>
+	  <tr>
+	    <td>okforms (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/okforms">GitHub</a></u></td>
+	    <td>No BS form and poll platform, made from scratch in pure PHP and client-side JS/CSS. No frameworks.</td>
+	  </tr>
+	  <tr>
+	    <td>ebin-dos (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/ebin-dos">GitHub</a></u></td>
+	    <td>Experimental delving into writing OSes. Ended it on this, a bootloader meme application.</td>
+	  </tr>
+	<tr>
+	    <td>x220-catalina-efi (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/x220-catalina-efi">GitHub</a></u></td>
+		<td>Hackintosh EFI configuration for Clover, to boot macOS Catalina on a ThinkPad X220</td>
+	</tr>
+	<tr>
+	    <td>x220-mojave-efi (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/x220-mojave-efi">GitHub</a></u></td>
+		<td>Hackintosh EFI configuration for Clover, to boot macOS Mojave on a ThinkPad X220</td>
+	</tr>
+	<tr>
+	    <td>x220-lion-efi (no preview)</td>
+	    <td><u><a href="https://github.com/x-t/x220-lion-efi">GitHub</a></u></td>
+		<td>Hackintosh EFI configuration for Clover, to boot OS X Lion on a ThinkPad X220</td>
+	</tr>
+	<tr>
+	    <td><u><a href="./rogue_js/index.html">rogue.js demo</a></u></td>
+	    <td><u><a href="https://drive.google.com/open?id=1GZVIR6Eldixbxt3Ii4NJBtIRFJo7pSTQ">Google Drive</a></u>, also on the page (CC0)</td>
+		<td>A JavaScript demo of a rogue-like engine I made while being very bored.</td>
+	</tr>
+	<tr>
+        <td><u><a href="./f00f.me-wayback/guestbook.html">ok-guestbook</a></u> <i style="color:LightCoral;">Static</i></td>
+	    <td><u><a href="https://github.com/x-t/ok-guestbook">GitHub</a></u></td>
+		<td>A simple PHP guestbook that can be used for websites. Although I don't like guestbooks, I made one in 2018. Please note, the page is customizable, you don't need to use this horrible color scheme.</td>
+	</tr>
+	</table>
+-->
+
+<!--
+	<table>
+	<tr>
+    	<th>Project name (click for live preview, if available)</th>
+    	<th>Source code</th>
+    	<th>Description</th>
+  	</tr>
+	<tr>
+	    <td><u><a href="https://x-t.github.io">x-t.github.io (formely zxyz.best)</a></u></td>
+	    <td>Use view-source</td>
+		<td>My current site about me and my work. The fourth, and most likely last, generation.</td>
+	</tr>
+	</table>
+-->
