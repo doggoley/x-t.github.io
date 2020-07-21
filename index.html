@@ -34,7 +34,7 @@
 	<meta content="summary" property="twitter:card">
 	<link rel="shortcut icon" href="favicon.jpg" type="image/jpeg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="main.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/main.min.css" rel="stylesheet" type="text/css" media="all">
 	<link id="fontawesome" rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" crossorigin="anonymous" />
 </head>
 <body>
@@ -42,52 +42,68 @@
 <div id="snow"></div>
 <div class="main c">
 	<div style="display:none;"><h1>Without CSS, many sites end up looking horrible. Use an up-to-date browser.</h1></div>
-	<noscript><h1>Enable JavaScript for optimal viewing. It will give you cool randomized backgrounds!</h1></noscript>
+	<noscript><h1>Enable JavaScript for proper viewing.</h1></noscript>
 	<p class="c"><img class="favico" src="favicon.jpg" width="128" height="128" alt="Profile picture" title="The Clash - London Calling"></p>
 <div class="border">
 <div class="content">
 	<h1 class="c">zxyz</h1>
+	<div class="tabBarWrapper">
+		<div class="tabBar c">
+			<div id="tab1" class="tab">About</div>
+			<div id="tab2" class="tab">Contact</div>
+			<div id="tab3" class="tab">Work</div>
+			<div id="tab4" class="tab">Other</div>
+		</div>
+		<div class="tabBarSlider"></div>
+	</div>
+
 	<div id="eventSpace"></div>
-	<br>
-	<h2 class="c">About</h2>
-    <div class="c">
-	<p>I'm a 17 y/o high school student from Lithuania.</p>
-	<p>I am a sysadmin/developer. Although I'm not actively working on projects, it is a field I'm passionate for.</p>
-    </div>
-	<br>
-	<h2 class="c">Contact</h2>
-	<div class="c contactList">
-		<a href="mailto:cmp@airmail.cc">
-			<div class="button">
-			<i class="fas fa-at"></i> E-mail
-			</div>
-		</a>
+
+	<div id="aboutContent">
+		<p class="c">I'm a 17 y/o high school student from Lithuania.</p>
+		<p class="c">I am a sysadmin/developer. Although I'm not actively working on projects, it is a field I'm passionate for.</p>
 	</div>
-	<div class="c">
-		<p>Most likely, I will not respond. Especially if you're trying to stalk me, directly or through friends.</p>
+
+	<div id="contactContent">
+		<div class="c contactList">
+			<a href="mailto:cmp@airmail.cc">
+				<div class="button">
+				<i class="fas fa-at"></i> E-mail
+				</div>
+			</a>
+		</div>
+		<p class="c">I am on many platforms, however e-mail is the best way to get a reply from me.</p>
 	</div>
-	<br>
-	<h2 class="c">Work</h2>
-	<div class="c contactList">
-		<a href="archive/index.html">
-			<div class="button">
-			<i class="fas fa-tasks"></i> Projects
-			</div>
-		</a>
+
+	<div id="workContent">
+		<div class="c contactList">
+			<a href="projects.html">
+				<div class="button">
+				<i class="fas fa-tasks"></i> Projects
+				</div>
+			</a>
+		</div>
+		<p class="c">Due to the amount of project I've included on this site, I separated it to a new page.</p>
 	</div>
-    <br>
-	<h2 class="c">Other</h2>
-	<div class="c contactList">
-		<a href="terry/gallery.html">
-			<div class="button">
-			<i class="fas fa-archive"></i> Terry A. Davis archive
-			</div>
-		</a>
+
+	<div id="otherContent">
+		<div class="c contactList">
+			<a href="terry_gallery.html">
+				<div class="button">
+				<i class="fas fa-archive"></i> Terry A. Davis archive
+				</div>
+			</a>
+		</div>
+		<p class="c">Anything here is not personal for me, I just thought I'd host it.</p>
+		<br>
+		<p class="c">© 2020 zxyz</p>
 	</div>
+
 </div><!-- content -->
 </div><!-- border -->
 </div><!-- main -->
-<script src="main.min.js"></script>
-<script src="snow.min.js"></script>
+<script src="js/bg.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/snow.min.js"></script>
 </body>
 </html>
