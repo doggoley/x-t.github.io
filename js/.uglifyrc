@@ -1,0 +1,36 @@
+{
+    "minifyOnSave": "no",
+    "hideButton": "never",
+    "showLogOnWarning": true,
+    "showLogOnError": true,
+    "onSaveDelay": 0,
+    "uglifyConfigFile": ".uglifyrc",
+    "genJSmap": false,
+    "jsMapSource": "",
+    "jsMinPath": "",
+    "jsPostfix": "min",
+    "js": {
+        "mangle": false,
+        "compress": {
+            "unused": true
+        },
+        "output": {
+            "quote_style": 0
+        },
+        "warnings": true,
+        "sourceMap": false
+    },
+    "cleancssConfigFile": ".cleancssrc",
+    "genCSSmap": false,
+    "cssMapSource": "",
+    "cssMinPath": "",
+    "cssPostfix": "min",
+    "css": {
+        "rebase": false,
+        "sourceMap": false
+    },
+    "enableAutoprefixer": false,
+    "enableAutoprefixerSelection": false,
+    "autoprefixer": {},
+    "autoprefixerConfigFile": ".autoprefixerrc"
+}

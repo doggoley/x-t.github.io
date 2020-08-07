@@ -118,60 +118,7 @@
 </div><!-- content -->
 </div><!-- border -->
 </div><!-- main -->
-<script>
-
-console.log("%cVery, very shitty gallery!\n%cv1.0%c\nhttps://zxyz.best", "color:red;font-size:200%", "color:lightblue;font-size:150%;", "color:default;font-size:100%");
-
-var content = document.getElementsByClassName("content")[0];
-var br = document.getElementsByTagName("br");
-for (var i = --br.length; i >= 0; i--)
-	br[i].parentNode.removeChild(br[i]);
-var maxHeight = 200;
-var maxWidth = 200;
-var photos = content.getElementsByTagName("a");
-var _images = {};
-
-for (var i = 0; i < photos.length; i++) {
-	_images[photos[i].innerHTML] = photos[i];
-}
-
-for (var i = 0; i < photos.length; i++) {
-	var x = "";
-	for (var k = --photos[i].innerHTML.length; k >= 0; k--) {
-		if (photos[i].innerHTML.charAt(k) != ".")
-			x = photos[i].innerHTML.charAt(k) + x;
-		else
-			break;
-	}
-
-	if (x != "jpg" && x != "png" && x != "JPG" && x != "PNG" && x != "jpeg" && x != "JPEG" && x != "gif")
-		continue;
-
-	var img = new Image();
-	img.onload = function() {
-		var width = this.width;
-		var j = 0;
-		while (width > maxWidth)
-			width = width / 2;
-		//console.log(this.src + ": %c" + this.width + "%c->%c" + width + "%c", "color:red", "color:default", "color:lightgreen", "color:default");
-		this.width = width;
-		var p = "";
-		var l = 0;
-		for (var k = --this.src.length; k >= 0; k--) {
-			if (this.src.charAt(k) != "/") {
-				p = this.src.charAt(k) + p;
-			} else if (this.src.charAt(k) == "/" && l != 1) {
-				p = "/" + p;
-				l = 1;
-			} else {
-				break;
-			}
-		}
-		_images[p].innerHTML = "";
-		_images[p].appendChild(this);
-	}
-	img.src = photos[i].getAttribute("href");
-}
-</script>
+<!-- <script src="js/gallery.js"></script> -->
+<script src="js/gallery.min.js"></script>
 </body>
 </html>

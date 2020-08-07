@@ -22,11 +22,6 @@ a {
 	animation: favico 0.5s ease-out;
 }
 
-.ripTerry {
-	display: none;
-	margin-bottom: 200px;
-}
-
 .c {
 	text-align: center;
 }
@@ -41,10 +36,6 @@ a {
 	text-align: left;
 	display: inline-block;
     min-width: 60%;
-}
-
-.list {
-	font-size: 140%;
 }
 
 #bg {
@@ -81,16 +72,7 @@ a {
 	position: fixed;
 }
 
-.hSpacer {
-	display: inline;
-	margin-left: 20px;
-}
-
-.linkWork {
-	min-width: 100px;
-}
-
-.contactList {
+.contactList {  /* Legacy: was used for a contact list, now only to change font size*/
 	font-size: 120%;
 }
 
@@ -109,15 +91,15 @@ a {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-width: 250px;
-	color: white;
+    color: white;
 }
 
 .button:hover {
 	animation: button 0.2s ease;
     background-color: rgba(99, 99, 99, 0.15);
+    cursor: pointer;
 }
 
-/* Box spacing */
 .projectBox {
     display: flex;
     flex-wrap: nowrap;
@@ -150,7 +132,6 @@ a {
     align-items: center;
 }
 
-/* Box left side */
 .projectBox_title {
     font-size: 200%;
 }
@@ -164,10 +145,6 @@ a {
     font-size: 125%;
 }
 
-/* Box center */
-/*.projectBox_description {}*/
-
-/* Box right side */
 .projectBox_button {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
     background-color: rgba(52, 148, 238, 0.5);
@@ -283,6 +260,10 @@ a {
     white-space: normal;
 }
 
+.galleryNode:hover {
+    cursor: pointer;
+}
+
 @keyframes content {
 	0% {
 		transform: translateY(5%);
@@ -353,7 +334,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-    /* Mobile version */
 	.border {
 		text-align: left;
 		display: inline-block;
@@ -393,7 +373,6 @@ a {
 }
 
 @media only screen and (max-width: 1200px) {
-    /* Box spacing */
     .projectBox {
         display: flex;
         flex-wrap: nowrap;
@@ -431,19 +410,10 @@ a {
         display: none;
     }
 
-    /* Box left side */
-    .projectBox_title {
-        font-size: 200%;
-    }
-    /*.projectBox_subtitle {}*/
     .projectBox_src {
         margin-top: 20px;
     }
 
-    /* Box center */
-    /*.projectBox_description {}*/
-
-    /* Box right side */
     .projectBox_button {
         width: 100%;
         height: 70px;
