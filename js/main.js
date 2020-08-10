@@ -1,7 +1,7 @@
 // Events
 
 var date = new Date();
-var m = date.getMonth();
+var m = date.getMonth() + 1;
 var d = date.getDate();
 var y = date.getFullYear();
 
