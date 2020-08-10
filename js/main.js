@@ -36,12 +36,11 @@ if (m == 1 && (d >= 1 && d <= 5)) {
 // Terry
 
 if (m == 8 && (d >= 11 && d <= 18)) {
-    var yearPass = y - 2018;
     var eventText = '';
     eventText += '<br>';
     eventText += '<h1 class="c"><i class="fas fa-cross"></i></h1>';
     eventText += '<h2 class="c">RIP Terry Andrew Davis</h2>';
-    eventText += '<p class="c">August 11 marks the ${yearPass} year of his passing.</p>';
+    eventText += '<p class="c">August 11 marks the ' + y - 2018 + ' year of his passing.</p>';
     eventText += '<p class="c">My archive of his work and photos is in the other tab.</p>';
     eventText += '<p class="c">Light a candle in his honor.</p>';
     
