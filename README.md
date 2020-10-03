@@ -1,7 +1,7 @@
 # [zxyz.best](https://x-t.github.io)
 ## Generation 4 of the personal website
 
-Probably the most simple, yet best generation of the site yet. Although quite possibly, the last.
+Probably the most simple, yet best generation of the site yet. Although quite possibly, the last...
 
 The website follows several design decisions
 
@@ -9,4 +9,4 @@ The website follows several design decisions
 * **Archive of past projects** - never seen before, a full list of public, still available (with copies of themselves/source code) projects.
 * **Terry archive** - brought back from an easter egg in generation 3, publically.
 * **Very, very shitty gallery** - JS script that creates a pretty nice-looking gallery, it's super customizable, super retarded, but very easily customizable.
-* **No frameworks** - Vanilla CSS and JS only. Designed to survive a nuclear blast.
+* **No frameworks** - Vanilla CSS and JS only. Designed to survive a nuclear blast, with no bloat!
